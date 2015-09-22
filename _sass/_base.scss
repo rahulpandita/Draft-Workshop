@@ -74,35 +74,57 @@ li {
     }
 }
 
-
-
-/**
- * Headings
- */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+  color:#222;
+  margin:0 0 20px;
 }
 
+p, ul, ol, table, pre, dl {
+  margin:0 0 20px;
+}
+
+h1, h2, h3 {
+  line-height:1.1;
+}
+
+h1 {
+  font-size:28px;
+}
+
+h2 {
+  color:#393939;
+}
+
+h3, h4, h5, h6 {
+  color:#494949;
+}
+
+a {
+  color:#39c;
+  font-weight:400;
+  text-decoration:none;
+}
 
 
 /**
  * Links
  */
-a {
-    color: $brand-color;
-    text-decoration: none;
+a small {
+  font-size:11px;
+  color:#777;
+  margin-top:-0.6em;
+  display:block;
+  text-decoration: none;
 
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
+  &:visited {
+      color: darken(#777, 15%);
+  }
 
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
+  &:hover {
+      color: $text-color;
+      text-decoration: underline;
+  }
 }
-
-
 
 /**
  * Blockquotes
@@ -111,8 +133,8 @@ blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
+    font-size: $base-font-size;
+    letter-spacing: -0.5px;
     font-style: italic;
 
     > :last-child {
@@ -127,7 +149,7 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
+    font-size: $base-font-size;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: #eef;
