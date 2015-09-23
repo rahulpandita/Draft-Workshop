@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Test Post!"
+date:   2015-09-22 12:00:00
+categories: Test Post
+---
+
+Test Post to confirm everything is setup correctly

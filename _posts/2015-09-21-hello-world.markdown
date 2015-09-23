@@ -8,7 +8,7 @@ categories: jekyll update
 The customary `hello world!` post.
 
 {% highlight java %}
-publi class Blog{
+public class Blog{
 	public static void main (String[] args) {
 		System.out.println("Hello World!");
 	}
