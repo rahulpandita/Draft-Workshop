@@ -12,3 +12,6 @@ github_username:  rahulpandita
 markdown: kramdown
 
 gems: [jemoji]
+
+#pagination
+paginate: 4
