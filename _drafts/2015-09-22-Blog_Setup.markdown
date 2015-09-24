@@ -8,7 +8,7 @@ categories: Tutorial
 This blog was put together using [Jekyll](https://jekyllrb.com/) and [Github Pages](https://github.com/).
 Listed next are the steps I followed:
 
-* Create a Repostory in Github named "blog". While creating the repostory include a default `.gitignore` file of type Jekyll.
+* Create a Repostory in Github named "blog". While creating the repostory also include a default `.gitignore` file of type Jekyll.
 * Clone the repository on your local machine (I have a OSX machine).
 * Install Jekyll by running `gem install jekyll` on command prompt. *(No need to install Ruby, as Ruby 2.0 is included in OS X Yosemite and Mavericks. OS X Mountain Lion, Lion, and Snow Leopard ship with Ruby 1.8.7.)*
 * Run `jekyll new blog` on command prompt. A folder named "blog" will be created.
