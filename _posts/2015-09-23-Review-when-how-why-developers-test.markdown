@@ -5,6 +5,8 @@ date:   2015-09-23 8:00:00
 categories: Review
 ---
 
+In this paper, authors attempt to address the pressing issues: *"How much should we test? And when should we stop testing?"*  in part, by analyzing the development activities of 416 developers spanning several countries having varied experiences.
+They achieve this by having the developers volunteer the development information by installing a [WatchDog](http://testroots.org/testroots_watchdog.html) plugin in their IDE's (currently eclipse and IntelliJ Idea). Authors describe in detail what activities they monitor and explain how they co-relate the activity type with with various activities such as testing, reading code, running tools, or writing production code.
 
 [Article link](http://www.st.ewi.tudelft.nl/~mbeller/publications/2015_beller_gousios_panichella_zaidman_when_how_and_why_developers_do_not_test_in_their_ides.pdf)
 
@@ -16,9 +18,6 @@ categories: Review
 ---
 
 ####Thoughts
-Authors attempt to address the pressing issues: *"How much should we test? And when should we stop testing?"*  in part, by analyzing the development activities of 416 developers spanning several countries having varied experiences.
-They achieve this by having the developers volunteer the development information by installing a [WatchDog](http://testroots.org/testroots_watchdog.html) plugin in their IDE's (currently eclipse and IntelliJ Idea). Authors describe in detail what activities they monitor and explain how they co-relate the activity type with with various activities such as testing, reading code, running tools, or writing production code.
-
 Authors question the age-old accepted statement that developers *spend more than half their time on testing*. 
 According to their analysis developers spend 25% of their time in *writing* test classes.
 *They equate testing time with the time spent on writing test code. However, there might be cases when developers are refactoring production code as a part of testing*.
