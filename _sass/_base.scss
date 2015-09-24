@@ -24,7 +24,6 @@ body {
 }
 
 
-
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -223,4 +222,25 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+/**
+ * Content div Classes
+ */
+.contentMain {
+width: 100%;
+}
+
+.contentBody, .sideList {
+    border-right: 1px solid $grey-color;
+	float:left;
+    width: 76%;
+	padding-right: 1%;
+}
+
+.sideList {
+	border-right: none;
+    width: 20%;
+	padding-right: 0;
+	padding-left: 2%;
 }
