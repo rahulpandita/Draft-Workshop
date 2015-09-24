@@ -178,6 +178,15 @@
     }
 }
 
+.post-idx-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit/4;
+    }
+}
+
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
