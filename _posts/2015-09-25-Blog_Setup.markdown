@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Creating this blog"
-date:   2015-09-22 12:00:00
+date:   2015-09-25 09:30:00
 categories: Tutorial
 ---
 
