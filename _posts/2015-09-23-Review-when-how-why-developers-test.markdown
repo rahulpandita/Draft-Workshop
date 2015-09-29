@@ -3,6 +3,7 @@ layout: post
 title:  "When, How, and Why Developers (Do Not) Test in Their IDEs"
 date:   2015-09-23 8:00:00
 categories: Review
+comments: true
 ---
 
 In this paper, authors attempt to address the pressing issues: *"How much should we test? And when should we stop testing?"*  in part, by analyzing the development activities of 416 developers spanning several countries having varied experiences.
