@@ -3,6 +3,7 @@ layout: post
 title:  "Ontology for Java"
 date:   2015-09-22 16:00:00
 categories: Review
+comments: true
 ---
 
 *In object-oriented languages, an API usually includes a description of a set of class deﬁnitions, with a set of behaviors associated with those classes. A behavior is the set of rules for how an object, derived from that class, will act in a given circumstance. Although, API documents provide invaluable information regarding the legal usage of API, they are in natural language text. A human mind is trained to extract the knowledge from natural language text. However, it is not trivial for computers to do the same owing to the ambiguity of natural language text. Thus, there is a need for representing the knowledge in API documents in a machine understandable format. In this project we take the ﬁrst step towards documenting the knowledge API documents in machine understandable format. In particular, this project presents an methodology to write ontologies from API documents. We document our experience of writing ontologies for JAVA or C# .NET API.*

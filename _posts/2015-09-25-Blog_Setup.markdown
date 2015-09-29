@@ -3,6 +3,7 @@ layout: post
 title:  "Creating this blog"
 date:   2015-09-25 09:30:00
 categories: Tutorial
+comments: true
 ---
 
 This blog was put together using [Jekyll](https://jekyllrb.com/) and [Github Pages](https://github.com/).

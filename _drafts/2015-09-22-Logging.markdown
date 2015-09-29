@@ -3,6 +3,7 @@ layout: post
 title:  "log.info(“What are the developers logging?”);"
 date:   2015-09-22 16:00:00
 categories: Review
+comments: true
 ---
 
 *Software logging is a pervasive practice in large production systems. Besides being beneﬁcial in accounting for the activity within production system, logging is extremely valuable to keep track of what went wrong in case of a failure. However, recent studies point out the arbitrary nature of the logging within current systems. Absence of formal rigorous speciﬁcation and systematic process adds to the arbitrary nature of exiting logging practices. Since logging is seldom a core functionality intended towards the users of software system, therefore, in many cases, log messages are written as ‘after-thoughts’ after a failure happens and logs are needed. We hypothesize that existing logging patterns in the open source repositories is a source of collective knowledge a lot of developers. Thus, these patterns can assist developers in making informed logging decisions. In this paper, we present a novel approach based on mining data from exiting software repositories to mine logging patterns. Our evaluation results show ...*

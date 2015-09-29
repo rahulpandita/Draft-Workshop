@@ -3,6 +3,7 @@ layout: post
 title:  "API Mapping using Text Mining"
 date:   2015-09-21 10:44:00
 categories: paper presentation
+comments: true
 ---
 
 Our work on inferring likely method mappings across APIs was accepted in [SCAM 2015]{http://www.ieee-scam.org/2015/}. 

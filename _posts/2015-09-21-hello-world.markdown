@@ -3,6 +3,7 @@ layout: post
 title:  "Hello World!"
 date:   2015-09-21 10:44:00
 categories: jekyll update
+comments: true
 ---
 
 The customary `hello world!` post.
