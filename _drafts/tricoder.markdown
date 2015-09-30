@@ -63,7 +63,7 @@ The results appear in the code review as comments (Google terms it as *robot com
 #####EVALUATION	
 
 
-blah! blah! **BLAH**
+TBD
 
 #####CLOSING NOTES
 
@@ -72,4 +72,5 @@ blah! blah! **BLAH**
 
 ---
 
-Guest Writer : [Brittney Johnson](http://www4.ncsu.edu/~bijohnso/) is a PhD. at the [Department of Computer Science, NCSU](https://www.csc.ncsu.edu/) focussing on software engineering research. She is the member of [Developer Liberation Front](http://research.csc.ncsu.edu/dlf/) directed by [Dr. Emerson Murphy-Hill](https://people.engr.ncsu.edu/ermurph3/index.html).  
+*Guest Writer* : [Brittney Johnson](http://www4.ncsu.edu/~bijohnso/) is a PhD. student at the [Department of Computer Science, NCSU](https://www.csc.ncsu.edu/) focussing on software engineering research.
+She is the member of [Developer Liberation Front](http://research.csc.ncsu.edu/dlf/) directed by [Dr. Emerson Murphy-Hill](https://people.engr.ncsu.edu/ermurph3/index.html).  
