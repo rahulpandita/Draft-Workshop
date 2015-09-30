@@ -1,0 +1,98 @@
+---
+layout: post
+title:  "Tricorder: Building a Program Analysis Ecosystem"
+date:   2015-09-30 15:00:00
+categories: Review
+comments: true
+author: Rahul Pandita & Brittney Johnson
+---
+
+In this paper, authors provide an overview of the program analysis platform "Tricorder" that is being currently used in [Google](https://www.google.com/) for program analysis. They also present a set of guiding principles that went into creating the platform.
+
+[Article link](http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43322.pdf)
+
+
+###Abstract
+
+>Static analysis tools help developers find bugs, improve code readability, and ensure consistent style across a project. However, these tools can be difficult to smoothly integrate with each other and into the developer workflow, particularly when scaling to large codebases. We present TRICORDER, a program analysis platform aimed at building a data-driven ecosystem around program analysis. We present a set of guiding principles for our program analysis tools and a scalable architecture for an analysis platform implementing these principles. We include an empirical, in-situ evaluation of the tool as it is used by developers across Google that shows the usefulness and impact of the platform
+
+---
+
+
+###Thoughts
+
+
+Authors present their design decisions and lessons learned with the program analysis platform Tricorder.
+
+#####TRICORDER ARCHITECTURE 
+
+The Tricorder platform accepts as input the code to be analysed and outputs inline comments the code. 
+The platform is a realized as a microservice architecture.
+Authors argue that thinking in terms of services encourages scalability, modularity, and resilience (in case of node failure).
+Tricorder is designed to such that the analysis workers are designed to be replicated and stateless in order to make the system robust and scalable.
+The results appear in the code review as comments (Google terms it as *robot comments* or *robocomments* for short).
+
+
+
+
+#####GOOGLE PHILOSOPHY ON PROGRAM ANALYSIS
+
+1. **No false positives**
+	"No" may be an over statement as admitted by the authors.
+	The aim is to reduce the number of false positives to the minimum.
+	Authors also define a *effective false-positives* as a measure of number of reports that a user chose not to take any action.
+2. **Empower users to contribute**
+	The insight is to leverage the knowledge of masses to build a robust system.
+	Google actively encourages users of Tricorder platform to write new analyzers.
+	Since the users (google employees) typically work with variety of programming languages and custom APIs, authors seek to leverage the vast domain knowledge of the users to write analysers.
+	The "Tricorder" platforms enforces quality by reserving the right to remove an analyser from the system based on performance (i.e. how many users are ignoring warnings, are the warnings annoying, is the analyzer taking too many resources...).
+	Authors argue that analyzer writers typically take pride in their work, thus the analyzers are generally of high quality.
+	The issues reported against the analyzers are typically resolved fairly quickly.
+3. **Make data-driven usability improvements**
+	The idea is to avoid arbitrary design and implementation decisions and ground them on empirical evidence.
+	Enhancement and correction to analyzers are made based on the user feedback.
+4. **Workflow integration is key**
+	The key idea is that the analysis should integrate with the users workflow rather than a user having to go out of way to perform analysis.
+	For instance, a standalone analyser is less likely to be invoked by a developers in contrast to an analysis mechanism that integrates to his/her IDE.
+5. **Project customization, not user customization** 
+	`Past experiences at Google showed that allowing user specific customization caused discrepancies within and across teams, and resulted in declining usage of tools.`
+	Authors observed that oftentimes when a developer using a tool abandons project, team members often check in code containing warnings found by that tool.
+	However, Tricorder platfrom offers limited project-based customization. 
+	For instance, a team may choose to run optional analysis by default and some analysis that are not applicable can be disabled for a team.
+
+
+
+#####EVALUATION
+
+One thing to point out about this paper is that the focus is less on the technical aspects of the platform and more on the principles that went into developing Tricorder and how well the tool implements each. 
+This was nice; the platform took years to develop and I'm sure there are various technical pieces.
+It would have been too much to try to go into technical detail, so kudos on finding a good balance.
+At a high level, the guiding principles presented by the Tricorder paper make sense; 
+Some have been documented in existing literature, while others have been experimented with within Google.
+For example, false positives and workflow integration have been been discussed in literature as major deterrents for potential static analysis tool users.
+The authors give sufficient background and include references to the existing works, though some expected Google to take all the credit for the ideas presented :smile:. 
+
+Although there is an evaluation of the platform, it leaves something to be desired.
+For example, they kept track of how often developers using the tool clicked NOT USEFUL or PLEASE FIX to determine the usability of the tool.
+However, the numbers for theses clicks per day are surprisingly low for a company the size of Google.
+If this tool is available to Google employees, do the low numbers mean people are not using the tool or they are just not clicking the buttons?
+The work would benefit from a more in-depth evaluation, perhaps including some qualitative findings regarding how people use the platform and how often in comparison to other tools that are available or have been used in the past.
+
+#####CLOSING NOTES
+
+
+The publication that came from this work is overall an informative one that makes contributions to both the research and technical communities.
+Besides the fact that the paper is well written (which I should note, should unfortunately good writing is harder to come by now a days), there are a few others reasons why we believe this paper got accepted:
+
+1. The design guidelines for Tricorder are strong; again, some are not supported by existing literature. But there is support for each design decision made.
+2. There are design decisions at all (guidelines that can be replicated are always good).
+3. The project spans years of work with lots of data.
+4. It's Google!
+5. It's a relevant topic that people care about (and developers can relate to) in research and industry.
+
+Overall, well done Google! :smile:
+
+---
+
+*Guest Writer* : [Brittney Johnson](http://www4.ncsu.edu/~bijohnso/) is a PhD. student at the [Department of Computer Science, NCSU](https://www.csc.ncsu.edu/) focussing on software engineering research.
+She is the member of [Developer Liberation Front](http://research.csc.ncsu.edu/dlf/) directed by [Dr. Emerson Murphy-Hill](https://people.engr.ncsu.edu/ermurph3/index.html).  
