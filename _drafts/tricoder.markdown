@@ -60,15 +60,37 @@ The results appear in the code review as comments (Google terms it as *robot com
 	However, Tricorder platfrom offers limited project-based customization. 
 	For instance, a team may choose to run optional analysis by default and some analysis that are not applicable can be disabled for a team.
 
-#####EVALUATION	
 
 
-TBD
+#####EVALUATION
+
+One thing to point out about this paper is that the focus is less on the technical aspects of the platform and more on the principles that went into developing Tricorder and how well the tool implements each. 
+This was nice; the platform took years to develop and I'm sure there are various technical pieces.
+It would have been too much to try to go into technical detail, so kudos on finding a good balance.
+At a high level, the guiding principles presented by the Tricorder paper make sense; 
+Some have been documented in existing literature, while others have been experimented with within Google.
+For example, false positives and workflow integration have been been discussed in literature as major deterrents for potential static analysis tool users.
+The authors give sufficient background and include references to the existing works, though some expected Google to take all the credit for the ideas presented :smile:. 
+
+Although there is an evaluation of the platform, it leaves something to be desired.
+For example, they kept track of how often developers using the tool clicked NOT USEFUL or PLEASE FIX to determine the usability of the tool.
+However, the numbers for theses clicks per day are surprisingly low for a company the size of Google.
+If this tool is available to Google employees, do the low numbers mean people are not using the tool or they are just not clicking the buttons?
+The work would benefit from a more in-depth evaluation, perhaps including some qualitative findings regarding how people use the platform and how often in comparison to other tools that are available or have been used in the past.
 
 #####CLOSING NOTES
 
 
-*Reasons why this paper got accepted.*
+The publication that came from this work is overall an informative one that makes contributions to both the research and technical communities.
+Besides the fact that the paper is well written (which I should note, should unfortunately good writing is harder to come by now a days), there are a few others reasons why we believe this paper got accepted:
+
+1. The design guidelines for Tricorder are strong; again, some are not supported by existing literature. But there is support for each design decision made.
+2. There are design decisions at all (guidelines that can be replicated are always good).
+3. The project spans years of work with lots of data.
+4. It's Google!
+5. It's a relevant topic that people care about (and developers can relate to) in research and industry.
+
+Overall, well done Google! :smile:
 
 ---
 
