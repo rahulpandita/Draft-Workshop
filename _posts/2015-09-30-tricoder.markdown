@@ -62,7 +62,6 @@ The results appear in the code review as comments (Google terms it as *robot com
 
 
 
-#####EVALUATION
 
 One thing to point out about this paper is that the focus is less on the technical aspects of the platform and more on the principles that went into developing Tricorder and how well the tool implements each. 
 This was nice; the platform took years to develop and I'm sure there are various technical pieces.
