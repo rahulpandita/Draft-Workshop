@@ -61,6 +61,7 @@ The results appear in the code review as comments (Google terms it as *robot com
 	For instance, a team may choose to run optional analysis by default and some analysis that are not applicable can be disabled for a team.
 
 
+---
 
 
 One thing to point out about this paper is that the focus is less on the technical aspects of the platform and more on the principles that went into developing Tricorder and how well the tool implements each. 
