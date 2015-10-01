@@ -4,7 +4,7 @@ title:  "Tricorder: Building a Program Analysis Ecosystem"
 date:   2015-09-30 15:00:00
 categories: Review
 comments: true
-author: Rahul Pandita & Brittney Johnson
+author: Rahul Pandita & Brittnay Johnson
 ---
 
 In this paper, authors provide an overview of the program analysis platform "Tricorder" that is being currently used in [Google](https://www.google.com/) for program analysis. They also present a set of guiding principles that went into creating the platform.
@@ -94,5 +94,5 @@ Overall, well done Google! :smile:
 
 ---
 
-*Guest Writer* : [Brittney Johnson](http://www4.ncsu.edu/~bijohnso/) is a PhD. student at the [Department of Computer Science, NCSU](https://www.csc.ncsu.edu/) focussing on software engineering research.
+*Guest Writer* : [Brittnay Johnson](http://www4.ncsu.edu/~bijohnso/) is a PhD. student at the [Department of Computer Science, NCSU](https://www.csc.ncsu.edu/) focussing on software engineering research.
 She is the member of [Developer Liberation Front](http://research.csc.ncsu.edu/dlf/) directed by [Dr. Emerson Murphy-Hill](https://people.engr.ncsu.edu/ermurph3/index.html).  
