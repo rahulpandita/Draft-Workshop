@@ -10,7 +10,7 @@ layout: default
 			<!-- This loops through the paginated posts -->
 			{% for post in paginator.posts %}
 			<li>
-				<paper-card heading="{{ post.title }}" elevation="2">
+				<paper-card heading="{{ post.title }}" elevation="2" style="width:100%;">
 					<div class="card-content">
 						<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">read more...</a></span>
 						{{ post.excerpt }}
