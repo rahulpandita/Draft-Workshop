@@ -232,15 +232,11 @@ width: 100%;
 }
 
 .contentBody, .sideList {
-    border-right: 1px solid $grey-color;
-	float:left;
-    width: 76%;
-	padding-right: 1%;
+    float:left;
+    width: 78%;
 }
 
 .sideList {
-	border-right: none;
-    width: 20%;
-	padding-right: 0;
-	padding-left: 2%;
+	width: 21%;
+	padding-left: 1%;
 }
