@@ -11,14 +11,11 @@ layout: default
 		<div class="contentBody">
 			<paper-card heading="{{ page.title }}" elevation="2">
 				<div class="card-content">
-					<paper-header-panel mode="standard">
-					  	<div class="paper-header">
-						  <header class="post-header">
-							  <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-						  </header>
-						</div>
-					</paper-header-panel>
-					<p></p>
+					<div class="paper-header">
+					  <header class="post-header">
+						  <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+					  </header>
+					</div>
 					{{ content }}
 					{% include comments.html %}
 				</div>
