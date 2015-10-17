@@ -2,11 +2,6 @@
 layout: default
 ---
 <div class="post">
-	
-	
-	
-	
-	 
 	<div class="contentMain">
 		<div class="contentBody">
 			<paper-card heading="{{ page.title }}" elevation="2">
@@ -22,21 +17,15 @@ layout: default
 			</paper-card>
 		</div>
 		<div class="sideList">
-			
-			
-  				<h1 class="page-heading"><a href="{{ site.baseurl }}/">Posts</a></h1>
-  				<ul class="post-idx-list">
-  				{% for post in site.posts %}
-  					<li>
-  						<span class="post-meta">{{ post.date | date: "%b, %Y" }}</span>
-  						<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>  
-  					</li>
-  				{% endfor %}
-  				</ul>
-			
+			<h1 class="page-heading"><a href="{{ site.baseurl }}/">Posts</a></h1>
+  		<ul class="post-idx-list">
+  			{% for post in site.posts %}
+  			<li>
+  				<span class="post-meta">{{ post.date | date: "%b, %Y" }}</span>
+  				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  			</li>
+  			{% endfor %}
+  		</ul>
 		</div>
 	</div>
-	
-	
-	
 </div>
