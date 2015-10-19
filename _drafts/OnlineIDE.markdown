@@ -64,6 +64,10 @@ The output is then sent back to the client and gets displayed in the browser.
 
 https://codenvy.com/resources
 
+#### In demand programming languages.
+
+http://www.codingdojo.com/blog/8-most-in-demand-programming-languages-of-2015/
+
 ### Resourses
 
 https://atom.io/
