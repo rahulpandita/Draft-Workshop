@@ -21,8 +21,10 @@ They achieve this by having the developers volunteer the development information
 ####Thoughts
 Authors question the age-old accepted statement that developers *spend more than half their time on testing*. 
 According to their analysis developers spend 25% of their time in *writing* test classes.
+**EDIT:** *First author clarified that developers spend 25% of their time in **working** with test cases that involves modifying and reading such code*
 *They equate testing time with the time spent on writing test code. However, there might be cases when developers are refactoring production code as a part of testing*.
 Furthermore, authors provide evidence that developers generally over-estimate the time they spend on testing.
+
 
 They also report that there is lack of conformance with strict TDD even-though the developers claim they are following the TDD practice.
 They leverage non-finite-automata (NFA) to detect conformance that may have some limitations. 
