@@ -22,7 +22,7 @@ In particular, authors outline typical pitfalls that future tools-smiths will fi
 
 
 
-#### Thoughts
+##### Thoughts
 
 Overall, a well-written easy to follow article.
 Although the lessons summarized here are in the domain of software defect detection, the advice in general is valuable for tool-smiths eager to transition their research prototype into a product.

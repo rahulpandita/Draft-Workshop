@@ -11,8 +11,10 @@ github_username:  rahulpandita
 # Build settings
 markdown: kramdown
 
-gems: [jemoji]
-gems: [jekyll-paginate]
+gems:
+  - jekyll-paginate
+  - jemoji
+  
 
 #pagination
 paginate: 4
