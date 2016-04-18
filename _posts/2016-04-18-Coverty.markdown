@@ -77,6 +77,7 @@ Authors comment that, generally a defect report that is not-understood by the cu
  
 
 #####How to handle cluelessness. 
+
 >You cannot often argue with people who are sufficiently confused about technical matters; they think you are the one who doesn't get it.
 
 Authors provide a valuable gem in dealing with customers that lack the required technical skills to appreciate tool output.
@@ -88,6 +89,7 @@ In retrospect, it is easier to connect the dots.
 For instance, whenever I presented my work to an audience outside my area of work (say industry day presentions) I was fortunate to find a champion in the crowd to support me in my claims by relating my technical-findings to the issues they encountered.*
 
 #####What happens when you can't fix all the bugs? 
+
 >If you think bugs are bad enough to buy a bug-finding tool, you will fix them. Not quite. 
 
 Authors present the insight that not all of the reported defects will be fixed, even though customers are paying good money to find defects.
@@ -115,6 +117,7 @@ Given this shift of paradigm, it will be intersting to see whether the churn pro
 
 
 #####Myth: More analysis is always good. 
+
 >While nondeterministic analysis might cause problems, it seems that adding more deterministic analysis is always good. Bring on path sensitivity! Theorem proving! SAT solvers! Unfortunately, no.
 
 Authors argue that best analysis are those that can run cheaply and efficiently even though being non-deterministic. 
@@ -122,12 +125,14 @@ Authors argue that best analysis are those that can run cheaply and efficiently 
 
 
 #####No bug is too foolish to check for. 
+
 Authors state that given enough code, developers will write almost anything you can think of.
 They argue that foolish defects are typically of the serious nature.
 
 
 
 #####False Positives
+
 > False positives do matter. In our experience, more than 30% easily cause problems.
 
 Authors present a very different take on why *false postives* matter.
