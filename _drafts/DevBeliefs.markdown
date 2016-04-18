@@ -12,23 +12,23 @@ In this paper authors comment on how beliefs of software developers (within Micr
 [Article link](http://macbeth.cs.ucdavis.edu/belief+evidence.pdf)
 
 
-###Abstract
+### Abstract
 
 >Empirical software engineering has produced a steady stream of evidence-based results concerning the factors that affect important outcomes such as cost, quality, and interval. However, programmers often also have strongly-held a priori opinions about these issues. These opinions are important, since developers are highly trained professionals whose beliefs would doubtless affect their practice. As in evidence-based medicine, disseminating empirical findings to developers is a key step in ensuring that the findings impact practice. In this paper, we describe a case study, on the prior beliefs of developers at Microsoft, and the relationship of these beliefs to actual empirical data on the projects in which these developers work. Our findings are that a) programmers do indeed have very strong beliefs on certain topics b) their beliefs are primarily formed based on personal experience, rather than on findings in empirical research and c) beliefs can vary with each project, but do not necessarily correspond with actual evidence in that project. Our findings suggest that more effort should be taken to disseminate empirical findings to developers and that more in-depth study the interplay of belief and evidence in software practice is needed.
 
 ---
 
 
-###Thoughts
+### Thoughts
 
 
 Authors present their design decisions and lessons learned with the program analysis platform Tricorder.
 
-#####TRICORDER ARCHITECTURE 
+##### TRICORDER ARCHITECTURE 
 
 
 
-####Statements provided
+#### Statements provided
 
 * Code quality (defect occurrence) depends on which programming language is used.
 * Fixing defects is riskier (more likely to cause future defects) than adding new features.
@@ -47,13 +47,13 @@ Authors present their design decisions and lessons learned with the program anal
 * Coding standards help improve software quality
 * Code reviews improve software quality (reduces defect occurrence)
 
-#####GOOGLE PHILOSOPHY ON PROGRAM ANALYSIS
+##### GOOGLE PHILOSOPHY ON PROGRAM ANALYSIS
 
 
 
 
 
-#####CLOSING NOTES
+##### CLOSING NOTES
 
 
 The publication that came from this work is overall an informative one that makes contributions to both the research and technical communities.
