@@ -2,8 +2,8 @@
 title: Draft Workshop
 #email: rahulpandita@gmail.com
 #description: > # this means to ignore newlines until "baseurl:"
-#  My outlook 
-baseurl: "/blog" # the subpath of your site, e.g. /blog/
+#  My outlook
+#baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "http://rahulpandita.me/" # the base hostname & protocol for your site
 twitter_username: pandita_rahul
 github_username:  rahulpandita
@@ -12,6 +12,7 @@ github_username:  rahulpandita
 markdown: kramdown
 
 gems: [jemoji]
+gems: [jekyll-paginate]
 
 #pagination
 paginate: 4
