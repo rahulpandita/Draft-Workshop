@@ -142,7 +142,7 @@ From a business perspective, an expensive tool needs someone with power from cli
 Such people often have at-least one enemy.
 Having false positives (a significant number of them) is equivalent to supplying ammunition that would embarrass the tool champion internally, resulting in loss of business.
 
-*This observation allowed me to think of false positives in a social light as opposed to a statistical measure that I am used to.*
+*This observation forced me to think of false positives in a social light as opposed to a statistical measure that I am used to.* :smile:
 
 
 
