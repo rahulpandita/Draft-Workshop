@@ -7,7 +7,7 @@ comments: true
 author: Rahul Pandita
 ---
 
-In this article authors document their experience of commercializing a bug finding tool based on static analysis.
+In this article authors document their experience of commercializing a static-analysis based bug finding tool.
 In particular, authors outline typical pitfalls that future tool-smiths will find useful to transition an awesome research prototype into a functional and viable commercial product.
 
 [Article link](http://cacm.acm.org/magazines/2010/2/69354-a-few-billion-lines-of-code-later/fulltext)
