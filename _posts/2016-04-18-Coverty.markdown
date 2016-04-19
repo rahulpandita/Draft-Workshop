@@ -7,15 +7,15 @@ comments: true
 author: Rahul Pandita
 ---
 
-In this article authors document their experience of commercializing a bug finding tools based on static analysis.
-In particular, authors outline typical pitfalls that future tools-smiths will find useful to transition an awesome research prototype into a functional and viable commercial product. 
+In this article authors document their experience of commercializing a bug finding tool based on static analysis.
+In particular, authors outline typical pitfalls that future tool-smiths will find useful to transition an awesome research prototype into a functional and viable commercial product.
 
 [Article link](http://cacm.acm.org/magazines/2010/2/69354-a-few-billion-lines-of-code-later/fulltext)
 
 
 #### Abstract
 
->In 2002, COVERITY commercialized a research static bug-finding tool. Not surprisingly, as academics, our view of commercial realities was not perfectly accurate. However, the problems we encountered were not the obvious ones. Discussions with tool researchers and system builders suggest we were not alone in our naïveté. Here, we document some of the more important examples of what we learned developing and commercializing an industrial strength bug-finding tool. 
+>In 2002, COVERITY commercialized a research static bug-finding tool. Not surprisingly, as academics, our view of commercial realities was not perfectly accurate. However, the problems we encountered were not the obvious ones. Discussions with tool researchers and system builders suggest we were not alone in our naïveté. Here, we document some of the more important examples of what we learned developing and commercializing an industrial strength bug-finding tool.
 
 ---
 
@@ -53,7 +53,7 @@ A sentiment that has been echoed by Sadowski and colleagues in their work: [Tric
 >The C language does not exist; neither does Java, C++, and C#. While a language may exist as an abstract idea, and even have a pile of paper (a standard) purporting to define it, a standard is not a compiler.
 
 Authors anecdotally comment on how language is an abstract idea only concretized by the compiler used by a programmer.
-With multitude of compilers and compiler extensions available, a simple activity of parsing code, which is pre-cursor to static analysis, has been rendered non-trivial. 
+With multitude of compilers and compiler extensions available, a simple activity of parsing code, which is pre-cursor to static analysis, has been rendered non-trivial.
 In some cases changing the compilers require costly re-certifications, for instance in safety and mission critical software.
 In other cases, customers resorted to non-standard use of compiler extensions especially in embedded system domains to strive for efficiency while sacrificing standards.   
 Furthermore, customers resort to questioning the abilities of tool itself for not being able to reliably parse a piece of code that clearly compiled in their environment.
@@ -73,25 +73,25 @@ Authors comment on how customers often do not agree on defect severity, even tho
 Oftentimes, customer retort to blaming the tool is broken for a reported defect they do not understand or think is trivial.
 Authors comment that, generally a defect report that is not-understood by the customers is deemed as false-positive.
 
-*These days I have been very fortunate to collaborate with [Brittany Johnson](http://www4.ncsu.edu/~bijohnso/) the related area of studying [miscommunications in tool notifications](http://www4.ncsu.edu/~bijohnso/apatian.html).* 
+*These days I have been very fortunate to collaborate with [Brittany Johnson](http://www4.ncsu.edu/~bijohnso/) the related area of studying [miscommunications in tool notifications](http://www4.ncsu.edu/~bijohnso/apatian.html).*
 
- 
 
-##### How to handle cluelessness. 
+
+##### How to handle cluelessness.
 
 >You cannot often argue with people who are sufficiently confused about technical matters; they think you are the one who doesn't get it.
 
 Authors provide a valuable gem in dealing with customers that lack the required technical skills to appreciate tool output.
-Authors recommend to have the tool demonstration presentations in lage groups at client-site. 
+Authors recommend to have the tool demonstration presentations in lage groups at client-site.
 Their insight is that, a large group is likely to increase the probability that atleast one person appreciates the tool output as an outcome of having directly dealt with the issue reported by the tool.
 
 *I find this observation very intersting.
 In retrospect, it is easier to connect the dots.
 For instance, whenever I presented my work to an audience outside my area of work (say industry day presentions) I was fortunate to find a champion in the crowd to support me in my claims by relating my technical-findings to the issues they encountered.*
 
-##### What happens when you can't fix all the bugs? 
+##### What happens when you can't fix all the bugs?
 
->If you think bugs are bad enough to buy a bug-finding tool, you will fix them. Not quite. 
+>If you think bugs are bad enough to buy a bug-finding tool, you will fix them. Not quite.
 
 Authors present the insight that not all of the reported defects will be fixed, even though customers are paying good money to find defects.
 The general heuristic is that if as a development team you have not touched a piece of code for years, do not modify it (even for a defect fix) to avoid any breakage.
@@ -100,9 +100,9 @@ The general heuristic is that if as a development team you have not touched a pi
 In the work they report on how bug fixing can also introduce newer defects into the system.*
 
 
-##### Do missed errors matter? 
+##### Do missed errors matter?
 
-Given previous observation that all reported defects will not be fixed, tool-smiths may naively assume then the defects that have not been reported do not matter. 
+Given previous observation that all reported defects will not be fixed, tool-smiths may naively assume then the defects that have not been reported do not matter.
 However, unreported defects or *False Negatives* do matter as clients often-times deliberately introduce a defect into the source code, for a tool to detect.
 Not finding such defects leads to tool being labeled inefficient and loss of business.
 Thus, *False Negatives* must be taken seriously.
@@ -118,15 +118,15 @@ Authors argue that the tool users often do not take it kindly for the different 
 Given this shift of paradigm, it will be intersting to see whether the churn property as described by authors will still hold.*
 
 
-##### Myth: More analysis is always good. 
+##### Myth: More analysis is always good.
 
 >While nondeterministic analysis might cause problems, it seems that adding more deterministic analysis is always good. Bring on path sensitivity! Theorem proving! SAT solvers! Unfortunately, no.
 
-Authors argue that best analysis are those that can run cheaply and efficiently even though being non-deterministic. 
+Authors argue that best analysis are those that can run cheaply and efficiently even though being non-deterministic.
 *A sentiment that has been echoed by Sadowski and colleagues in their work: [Tricorder: Building a Program Analysis Ecosystem](http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43322.pdf).*
 
 
-##### No bug is too foolish to check for. 
+##### No bug is too foolish to check for.
 
 Authors state that given enough code, developers will write almost anything you can think of.
 They argue that foolish defects are typically of the serious nature.
@@ -148,4 +148,3 @@ Having false positives (a significant number of them) is equivalent to supplying
 
 
 ##### Overall, I throughly enjoyed reading this article.
-
