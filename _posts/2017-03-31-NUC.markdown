@@ -1,0 +1,101 @@
+---
+layout: post
+title:  "Mini-Servers for Micro-Services"
+date:   2017-03-31 16:00:00
+categories: Technology, Hardware
+comments: true
+authors: Rahul Pandita and Todd Erickson
+---
+<img src="{{ site.baseurl  }}/images/microservices.png">
+
+When we moved from being primarily focused on innovation to also developing a demo platform, our developers began to work with very different frameworks and libraries. As our interactions with more libraries and frameworks grew, we faced dev-setup issues with our monolithic architecture, including:
+
+- Installing and supporting multiple IDE environments within the single framework. Our developers were installing and maintaining libraries and frameworks locally that they would never need for their current tasks.
+- Software versioning. It's a project manager's nightmare keeping everyone in different teams on the same software versions.
+
+We began to consider moving to a microservices platform, which would allow us to isolate our developers' working environments and segregate libraries and software applications.
+
+Industry literature and Rahul's personal experience at North Carolina State University pointed to a shift away from monolithic architecture to a microservices architecture because it's more nimble, increases developer productivity, and would address our scaling and operational frustrations.
+
+However, moving to a microservices architecture made us address the platform's own issues, namely, how do we access these services – using in-house servers or through third-party hosted platforms?
+
+We first considered moving straight to cloud services through well-known providers such as Google Cloud, Amazon S3, and Microsoft Azure. Cloud computing rates have dropped dramatically, making hosted virtual-computing attractive.
+
+However, at the time, we were still exploring microservices as an option and were not fully committed. Also, we still have to do a lot of homework before transitioning to the cloud. When we added security and intellectual property (IP) concerns to the mix, we decided on an in-house solution for the time being.
+
+This blog post is about our process of determining which servers we would use to host the microservices.
+
+**Here we go**
+
+To quickly get up-and-running, we repurposed four older and idle [Apple Mac Pro towers](http://www.macofalltrades.com/ProductDetails.asp?ProductCode=MP-266-4C-E06A&amp;utm_source=googleshopping&amp;utm_medium=cpc_feed&amp;utm_campaign=comparison_shopping_feeds&amp;gclid=CjwKEAiArbrFBRDL4Oiz97GP2nISJAAmJMFa2CzN34sDDmnBhtvaIqFLNVAlDkxf8U7nZms67d8c9BoC) that were initially purchased for departed summer interns. We reformatted the towers and installed [Ubuntu Server 16 LTS](https://www.ubuntu.com/download/server) to make the future transition to the cloud easier because most cloud platforms support some version of Linux (Ubuntu) out-of-the box.
+
+The towers featured:
+
+- [Intel Xeon 5150](http://cpuboss.com/cpu/Intel-Xeon-5150?q=Intel%20Xeon%205150&amp;ts=1489612995843) 2.66 GHz dual-core processors with 4 MB cache
+- 4 GB PC2-5300 667 MHz DIMM
+- [NVIDIA GeForce 7300 GT](http://www.nvidia.com/page/geforce_7300.html) 256 MB graphics cards
+- 256 GB Serial ATA 7200 RPM hard drives
+
+These towers were fairly old – the Xeon 5150 processors were released in June 2006.
+
+Moving to a microservices model immediately solved many of our issues. First and foremost, it allowed us to separate our development environments into individual services.
+
+For example, our AI engine for logic queries could work independent of our program-analysis engine and our text-mining work. This was incredibly helpful because, for example, developers working on program analysis who did not directly dealt with the AI engine didn&#39;t have to install and maintain AI-specific libraries, and vice-versa for AI developers and program analysis tools.
+
+Now, each team simply interacts with an endpoint, which immediately improved our productivity. More on this revelation in a future post.
+
+As we continued to implement the microservices platform, we were pretty happy with the results. We were not yet committed to moving to the cloud when our servers started showing signs of their technological age – performance lags, reliability issues, limited upgrade capabilities, and increasing power consumption. The limited amount of DIMM, limited cost-effective upgrade capabilities, and constant OS crashes hampered our efforts.
+
+**Next step**
+
+For the next &quot;phase&quot; of our microservices evolution, we decided to acquire performant hardware specifically geared for hosting microservices.
+
+Phase Change is a small startup with limited funding, so we had to purchase equipment that would meet our needs within a budget. Like many &#39;cool&#39; startups, we are a Mac shop, so we naturally gravitated towards using Mac mini servers. We were already using Mac minis for file hosting, and there are plenty of websites detailing how to use them, such as MacStadium&#39;s [Mac mini Q&amp;A](http://www.macminiserver.com/).
+
+After ~~conducting random Google searches~~ extensive online research, we decided our best option was not the [Mac mini with OS X Server](http://www.macminiserver.com/), but the original Mac mini model. The [Mac mini with OS X Server](http://www.macminiserver.com/) features an Intel Core i7 processor and dual 1 TB Serial ATA drives, but Apple [stopped offering the mini with OS X Server](https://www.macrumors.com/2014/10/16/apple-mac-mini-no-server-option/) in October 2014.
+
+So, we considered the next best thing, mid-level original Mac minis that included:
+
+- [Intel i5 3230M](http://cpuboss.com/cpu/Intel-Core-i5-3230M) 2.6-3.2 GHz processors with 3 MB cache
+- [Intel Iris Graphics](http://www.intel.com/content/www/us/en/architecture-and-technology/visual-technology/graphics-overview.html) cards
+- 8 GB 1600 MHz LPDDR3 memory
+- 1 TB 5400 RPM hard drives
+- 1000 Base-T Gigabit Ethernet support
+
+The Mac mini form factor – 7.7 inches width by 1.4 inches height and 7.7 inches depth – and power consumption – 85 W maximum continuous power – were also appealing. The retail base price is $699. The cost-effective modern processors and increased memory were the most important factors in our consideration, and the tiny little Macs would integrate well into our &#39;cool&#39; Mac company environment.
+
+We were all set to move on the Mac minis until we found [Russell Ivanovic&#39;s blog post](https://rustyshelf.org/2017/01/07/my-next-mac-mini/), which revealed that **the Mac mini product line hasn&#39;t been updated since October 2014** – over 2.4 years, but Apple is still selling them at new-computer pricing. So much for the minis. Aargh!
+
+Luckily, we didn&#39;t have to start at square one this time around, because Ivanovic&#39;s blog post revealed what he bought instead of the mini – an [Intel NUC Kit mini PC](http://www.intel.com/content/www/us/en/nuc/nuc-kit-nuc6i7kyk-features-configurations.html).
+
+We ~~asked Siri to do the math~~ crunched the numbers and found that the NUC was a reasonable Mac-mini replacement. The Intel NUC Kits are mini PCs engineered for video gaming and intensive workloads. The base models include processors, graphics cards, system memory, space for permanent storage devices, peripheral connectivity ports, and expansion capabilities, but we upgraded our [NUC6i7KYK](http://www.intel.com/content/www/us/en/nuc/nuc-kit-nuc6i7kyk-features-configurations.html)s to include:
+
+- [Intel Core i7 6770HQ 4.0-4.65 GHz quad-core processors with 8 MB LC cache](http://cpuboss.com/cpu/Intel-Core-i7-6700K?q=Intel%20Core%20i7%206700K&amp;ts=1490223298327)
+- [Intel Iris Pro Graphics 580 cards](http://gpu.userbenchmark.com/SpeedTest/132950/IntelR-IrisTM-Pro-Graphics-580)
+- [Crucial 16 GB (8 GB x 2) DDR4 SODIMM 1066 MHz RAM](http://www.crucial.com/usa/en/ct16g4sfd8213)
+- [Samsung 850 EVO 250 GB SATA III internal SSDs](http://www.samsung.com/us/computing/memory-storage/solid-state-drives/ssd-850-evo-2-5-sata-iii-250gb-mz-75e250b-am/)
+- 1000 Base-T Gigabit Ethernet support
+
+The following table presents technical comparison between the old Mac towers, the Mac mini, and the Intel NUC Kit.
+
+|   | [**Mac**](http://www.macofalltrades.com/ProductDetails.asp?ProductCode=MP-266-4C-E06A&amp;utm_source=googleshopping&amp;utm_medium=cpc_feed&amp;utm_campaign=comparison_shopping_feeds&amp;gclid=CjwKEAiArbrFBRDL4Oiz97GP2nISJAAmJMFa2CzN34sDDmnBhtvaIqFLNVAlDkxf8U7nZms67d8c9BoC) [**Pro Tower**](http://www.macofalltrades.com/ProductDetails.asp?ProductCode=MP-266-4C-E06A&amp;utm_source=googleshopping&amp;utm_medium=cpc_feed&amp;utm_campaign=comparison_shopping_feeds&amp;gclid=CjwKEAiArbrFBRDL4Oiz97GP2nISJAAmJMFa2CzN34sDDmnBhtvaIqFLNVAlDkxf8U7nZms67d8c9BoC) | [**Mac mini**](http://www.apple.com/mac-mini/) | [**Intel NUC Kit**](http://www.intel.com/content/www/us/en/nuc/nuc-kit-nuc6i7kyk-features-configurations.html) [**NUC6i7KYK**](http://www.intel.com/content/www/us/en/nuc/nuc-kit-nuc6i7kyk-features-configurations.html) | **Comments** |
+| --- | --- | --- | --- | --- |
+| **Base Price** | $200-$300 | $699 | $569 | Mac tower has been discontinued but you can still buy preowned hardware. We chose the mid-level Mac mini ($699) for comparison fairness. |
+| **Processor** | [Intel](http://cpuboss.com/cpu/Intel-Xeon-5150?q=Intel%20Xeon%205150&amp;ts=1490297405895) [Xeon 5150](http://cpuboss.com/cpu/Intel-Xeon-5150?q=Intel%20Xeon%205150&amp;ts=1490297405895) [2.66 GHz](http://cpuboss.com/cpu/Intel-Xeon-5150?q=Intel%20Xeon%205150&amp;ts=1490297405895) [dual-core](http://cpuboss.com/cpu/Intel-Xeon-5150?q=Intel%20Xeon%205150&amp;ts=1490297405895) | [Intel Core](http://cpuboss.com/cpu/Intel-Core-i5-3230M?q=Intel%20Core%20i5%203230M&amp;ts=1490297382708) [i5 3230M](http://cpuboss.com/cpu/Intel-Core-i5-3230M?q=Intel%20Core%20i5%203230M&amp;ts=1490297382708) [2.6-3.5 GHz](http://cpuboss.com/cpu/Intel-Core-i5-3230M?q=Intel%20Core%20i5%203230M&amp;ts=1490297382708) [dual-core](http://cpuboss.com/cpu/Intel-Core-i5-3230M?q=Intel%20Core%20i5%203230M&amp;ts=1490297382708) | [Intel Core](http://cpuboss.com/cpu/Intel-Core-i7-6700K?q=Intel%20Core%20i7%206700K&amp;ts=1490223298327) [i7 6700K](http://cpuboss.com/cpu/Intel-Core-i7-6700K?q=Intel%20Core%20i7%206700K&amp;ts=1490223298327) [4.0-4.65 GHz](http://cpuboss.com/cpu/Intel-Core-i7-6700K?q=Intel%20Core%20i7%206700K&amp;ts=1490223298327) [quad core](http://cpuboss.com/cpu/Intel-Core-i7-6700K?q=Intel%20Core%20i7%206700K&amp;ts=1490223298327) | **Processor comparisons** [Xeon 5150 v. i5 3230M](http://cpuboss.com/cpus/Intel-Xeon-5150-vs-Intel-Core-i5-3230M) [Xeon 5150 v. i7 6700K](http://cpuboss.com/cpus/Intel-Xeon-5150-vs-Intel-Core-i7-6700K) [i5 3230M v. i7 6700K](http://cpuboss.com/cpus/Intel-Core-i7-6700K-vs-Intel-Core-i5-3230M)You can update the Mac mini to an i7 processor for $300. |
+| **Graphics** | [Nvidia](http://gpu.userbenchmark.com/SpeedTest/8156/NVIDIA-GeForce-7300-GT) [GeForce](http://gpu.userbenchmark.com/SpeedTest/8156/NVIDIA-GeForce-7300-GT) [7300 GT](http://gpu.userbenchmark.com/SpeedTest/8156/NVIDIA-GeForce-7300-GT) | [Intel](http://gpu.userbenchmark.com/SpeedTest/8813/IntelR-IrisTM-Graphics-5100) [Iris Pro](http://gpu.userbenchmark.com/SpeedTest/8813/IntelR-IrisTM-Graphics-5100) [HD 5100](http://gpu.userbenchmark.com/SpeedTest/8813/IntelR-IrisTM-Graphics-5100) | [Intel](http://gpu.userbenchmark.com/SpeedTest/132950/IntelR-IrisTM-Pro-Graphics-580) [Iris Pro 580](http://gpu.userbenchmark.com/SpeedTest/132950/IntelR-IrisTM-Pro-Graphics-580) | **Graphics card comparisons** [Nvidia GeForce 7300 GT v. Intel Iris Pro HD 5100](http://gpu.userbenchmark.com/Compare/Intel-Iris-Pro-HD-5100-Mobile-11-GHz-vs-Nvidia-GeForce-7300-GT/m8813vsm8156) [Nvidia GeForce 7300 GT v. Intel Iris Pro 580](http://gpu.userbenchmark.com/Compare/Nvidia-GeForce-7300-GT-vs-Intel-Iris-Pro-580-Mobile-Skylake/m8156vsm132950) [Intel Iris Pro had 5100 v. Intel Iris Pro 580](http://gpu.userbenchmark.com/Compare/Intel-Iris-Pro-HD-5100-Mobile-11-GHz-vs-Intel-Iris-Pro-580-Mobile-Skylake/m8813vsm132950)Apple hasn&#39;t officially released info on the Mac mini&#39;s exact graphics chipset, so we used [specs from EveryMac.com](http://www.everymac.com/systems/apple/mac_mini/index-macmini.html) for comparisons. |
+| **RAM** | 4 GBPC2-5300667 MHz | 8 GBLPDDR31600 MHz | [Crucial](http://www.crucial.com/usa/en/ct16g4sfd8213) [16 GB](http://www.crucial.com/usa/en/ct16g4sfd8213) [SODIMM DDR3L](http://www.crucial.com/usa/en/ct16g4sfd8213) [1066 MHz](http://www.crucial.com/usa/en/ct16g4sfd8213) | Out-of-the-box NUC Kits do not include RAM. We installed 16 GB DDRL3 SODIMMs for $108 each.The Mac mini is upgradeable to 16 GB for $200. |
+| **Storage** | 256 GBSerial ATA 7200 RPM | 1 TBSerial ATA5400 RPM | [Samsung 850 EVO](http://www.samsung.com/us/computing/memory-storage/solid-state-drives/ssd-850-evo-2-5-sata-iii-250gb-mz-75e250b-am/) [1 TB](http://www.samsung.com/us/computing/memory-storage/solid-state-drives/ssd-850-evo-2-5-sata-iii-250gb-mz-75e250b-am/) [SATA III](http://www.samsung.com/us/computing/memory-storage/solid-state-drives/ssd-850-evo-2-5-sata-iii-250gb-mz-75e250b-am/) [internal SSD](http://www.samsung.com/us/computing/memory-storage/solid-state-drives/ssd-850-evo-2-5-sata-iii-250gb-mz-75e250b-am/) | Out-of-the-box NUC Kits do not include internal storage. We installed 250 GB SSDs ($109 each) for a good performance/capacity mix, but use a 1 TB SSD here for comparison fairness.You can upgrade the Mac mini to a 1 TB [Mac Fusion Drive](http://www.macworld.com/article/3123737/macs/fusion-drive-or-more-ram-which-one-to-get-on-a-new-mac.html) (1 TB Serial ATA 5400 RPM + 24 GB SSD) for $200. |
+| **Comparison Purchase Prices**** (per unit) **| $200 - $300 | $1,399 | $997 |** Mac mini upgrades:**Intel Core i7 processor ($300); 16 GB LPDDR memory ($200); 1 TB Fusion Drive ($200)**NUC Kit Config Upgrades:** 16 GB DDR3L memory ($108); 1 TB SSDs ($320) |
+
+Our NUC Kits total price ended up being $786 per unit with the 16 GB SODIMM DDR3L RAM and 256 GB SSDs. If we had opted for 1 TB SSDs to match the standard capacity in the mid-level Mac mini, our price would have jumped to $1,199 per unit.
+
+We chose the Intel NUC Kits over the Mac minis because of the NUC Kits&#39; updated technology and overall better performance for the price. Putting together and installing Ubuntu Server 16 LTS on the NUCs was very straightforward.
+
+Both units are fully configured and have been in full production operation for a few weeks. We haven&#39;t encountered any issues. I&#39;ll divulge more on how they perform over time with different microservices and workloads in future blog posts.
+
+PS: We still looooove Mac towers and we are currently using them as test beds. That will also be the subject of a future blog post.
+
+---
+Cross-posted from [Phase Change Software blog](http://www.phasechange.ai/2017/03/29/hosting-microservices-cost-effective-hardware-options-blog/).
+
+Guest Writer Todd Erickson is a tech writer at [Phase Change](http://www.phasechange.ai/). His experience includes content marketing, technology journalism, and law. You can reach him at [terickson@phasechange.ai](mailto:terickson@phasechange.ai).
