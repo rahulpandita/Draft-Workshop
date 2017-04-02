@@ -11,7 +11,7 @@ authors: Rahul Pandita and Todd Erickson
 When we moved from being primarily focused on innovation to also developing a demo platform, our developers began to work with very different frameworks and libraries. As our interactions with more libraries and frameworks grew, we faced dev-setup issues with our monolithic architecture, including:
 
 - Installing and supporting multiple libraries and frameworks. Our developers were installing and maintaining multiple libraries and frameworks locally that they would never 'directly' interact with for their assigned tasks.
-- Software versioning. It's a project manager's nightmare keeping everyone in different teams on the same software versions to deal with inconsistant run-time environments.
+- Software versioning. It's a project manager's nightmare keeping everyone in different teams on the same software versions to deal with inconsistent run-time environments.
 
 We began to consider moving to a microservices architecture, which would allow us to shield our developers' working environments from installing various (most if not all) libraries and software applications.
 
@@ -19,9 +19,9 @@ Industry literature and Rahul's personal experience at [North Carolina State Uni
 
 However, moving to a microservices architecture forced us to address the architecure's requirements, namely, how do we access these services – using in-house servers or through third-party hosted platforms?
 
-We first considered moving straight to cloud services through well-known providers such as Google Cloud, Amazon S3, and Microsoft Azure ~~primarliy because all the cool kids were doing that~~. Cloud computing rates have dropped dramatically, making hosted virtual-computing attractive.
+We first considered moving straight to cloud services through well-known providers such as Google Cloud, Amazon S3, and Microsoft Azure ~~,because all the cool kids are doing that~~. Cloud computing rates have dropped dramatically, making hosted virtual-computing attractive.
 
-However, at the time, we were still exploring microservices as an option and were not fully committed. Also, we had (and still have ato the time of writing this post) to do a lot of homework before transitioning to the cloud. When we added security and intellectual property (IP) concerns to the mix, we decided on an in-house solution for the time being.
+However, at the time, we were still exploring microservices as an option and were not fully committed. Also, we had (and still have *at the time of writing this post*) to do a lot of homework before transitioning to the cloud. When we added security and intellectual property (IP) concerns to the mix, we decided on an in-house solution for the time being.
 
 This blog post is about our process of determining which servers we would use to host the microservices.
 
