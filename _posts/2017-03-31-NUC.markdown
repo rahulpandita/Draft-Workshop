@@ -21,7 +21,7 @@ However, moving to a microservices architecture forced us to address the archite
 
 We first considered moving straight to cloud services through well-known providers such as Google Cloud, Amazon S3, and Microsoft Azure ~~,because all the cool kids are doing that~~. Cloud computing rates have dropped dramatically, making hosted virtual-computing attractive.
 
-However, at the time, we were still exploring microservices as an option and were not fully committed. Also, we had (and still have *at the time of writing this post*) to do a lot of homework before transitioning to the cloud. When we added security and intellectual property (IP) concerns to the mix, we decided on an in-house solution for the time being.
+However, at the time, we were still exploring microservices as an option and were not fully committed. Also, we had (and still have <sup>*at the time of writing this post*</sup>) to do a lot of homework before transitioning to the cloud. When we added security and intellectual property (IP) concerns to the mix, we decided on an in-house solution for the time being.
 
 This blog post is about our process of determining which servers we would use to host the microservices.
 
