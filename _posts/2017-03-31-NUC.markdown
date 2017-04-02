@@ -19,7 +19,7 @@ Industry literature and Rahul's personal experience at [North Carolina State Uni
 
 However, moving to a microservices architecture forced us to address the architecure's requirements, namely, how do we access these services – using in-house servers or through third-party hosted platforms?
 
-We first considered moving straight to cloud services through well-known providers such as Google Cloud, Amazon S3, and Microsoft Azure ~~ primarliy because all the cool kids were doing that~~. Cloud computing rates have dropped dramatically, making hosted virtual-computing attractive.
+We first considered moving straight to cloud services through well-known providers such as Google Cloud, Amazon S3, and Microsoft Azure ~~primarliy because all the cool kids were doing that~~. Cloud computing rates have dropped dramatically, making hosted virtual-computing attractive.
 
 However, at the time, we were still exploring microservices as an option and were not fully committed. Also, we had (and still have ato the time of writing this post) to do a lot of homework before transitioning to the cloud. When we added security and intellectual property (IP) concerns to the mix, we decided on an in-house solution for the time being.
 
@@ -44,7 +44,7 @@ For example, our AI engine for logic queries could work independent of our progr
 
 Now, each team simply interacts with an endpoint, which immediately improved our productivity. More on this revelation in a future post.
 
-As we continued to implement the microservices platform, we were pretty happy with the results. We were not yet committed to moving to the cloud when our servers started showing signs of their technological age – performance lags, reliability issues, limited upgrade capabilities, and increasing power consumption (~~not to forget heat, which was not a bad thing in colorado winters~~). The limited amount of DIMM, limited cost-effective upgrade capabilities, and constant OS crashes hampered our efforts.
+As we continued to implement the microservices platform, we were pretty happy with the results. We were not yet committed to moving to the cloud when our servers started showing signs of their technological age – performance lags, reliability issues, limited upgrade capabilities, and increasing power consumption ~~(not to forget heat, which was not a bad thing in colorado winters)~~. The limited amount of DIMM, limited cost-effective upgrade capabilities, and constant OS crashes hampered our efforts.
 
 **Next step**
 
