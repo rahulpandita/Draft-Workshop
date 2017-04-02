@@ -4,7 +4,7 @@ title:  "&#39;Mini-Servers&#39; for &#39;Micro-Services&#39;"
 date:   2017-03-31 16:00:00
 categories: Technology, Hardware
 comments: true
-authors: Rahul Pandita and Todd Erickson
+author: Rahul Pandita and Todd Erickson
 ---
 <img src="{{ site.baseurl  }}/images/microservices.png">
 
