@@ -68,7 +68,7 @@ We were all set to move on the Mac minis until we found [Russell Ivanovic's blog
 
 Luckily, we didn&#39;t have to start at square one this time around, because Ivanovic&#39;s blog post revealed what he bought instead of the mini – an [Intel NUC Kit mini PC](http://www.intel.com/content/www/us/en/nuc/nuc-kit-nuc6i7kyk-features-configurations.html).
 
-We ~~asked Siri to do the math~~ crunched the numbers and found that the NUC was a reasonable Mac-mini replacement. The Intel NUC Kits are mini PCs engineered for video gaming and intensive workloads. The base models include processors, graphics cards, system memory, space for permanent storage devices, peripheral connectivity ports, and expansion capabilities, but we upgraded our [NUC6i7KYK](http://www.intel.com/content/www/us/en/nuc/nuc-kit-nuc6i7kyk-features-configurations.html)s to include:
+We ~~asked Siri to do the math~~ crunched the numbers and found that the NUC was a reasonable Mac-mini replacement. The Intel NUC Kits are mini PCs engineered for video gaming and intensive workloads. The base models include processors, graphics cards, slots for RAM and permanent storage devices, peripheral connectivity ports, and expansion capabilities, but we upgraded our [NUC6i7KYK](http://www.intel.com/content/www/us/en/nuc/nuc-kit-nuc6i7kyk-features-configurations.html)s to include:
 
 - [Intel Core i7 6770HQ 4.0-4.65 GHz quad-core processors with 8 MB LC cache](http://cpuboss.com/cpu/Intel-Core-i7-6700K?q=Intel%20Core%20i7%206700K&amp;ts=1490223298327)
 - [Intel Iris Pro Graphics 580 cards](http://gpu.userbenchmark.com/SpeedTest/132950/IntelR-IrisTM-Pro-Graphics-580)
