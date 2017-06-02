@@ -9,8 +9,9 @@ comments: true
 
 This post is about my *ongoing* journey to remedy my "increasing window" and "decreasing productivity" problem.
 
-> tl;dr : Actively minimizing distractions fosters a productive work environment. 
-
+---
+<span style="color:green">tl;dr : Actively minimizing distractions fosters a productive work environment.</span>
+---
 
 I like most programmers only can only aspire to be productive like Hugh Jackman in [swordfish](https://www.youtube.com/watch?v=u1Ds9CeG-VY); _"churning out copious amounts of code, just by recalling the syntax and the API's to be used from memory."_ However, it turns out that
 programming has evolved into ["Googling Stackoverflow"](http://www.theallium.com/engineering/computer-programming-to-be-officially-renamed-googling-stackoverflow/) :wink:
@@ -44,8 +45,9 @@ Although a good resolution monitor did provide me with great Paraphrasing Peter 
 I realized I was doing a lot of window manipulation myself. I searched for windows manipulation system and found [Spectacle App](https://www.spectacleapp.com/). A window management utility for macOS. At the core of the application is the shortcuts that allow you to quickly resize windows to predefined buckets. Using the app, I felt free
 from the shackles of using precise mouse clicks and drags to resize windows on my screen. This was a significant improvement and made my life a lot easier. Like a kid in the candy store, I quickly organized multitude of my windows into separate desktops and then within each desktop neatly organized them.
 
- | | :bulb: A combination of high-resolution monitor and a window management software can get you started! | |
- | --- | --- | --- |
+---
+<span style="color:green">:bulb: A combination of high-resolution monitor and a window management software can get you started!</span>
+---
 
 
 Few months using the application, I felt good about the combination of Spectacle App and multiple desktops. However, something still felt a miss. Even with the efficiency of multiple desktops and awesome windows management, I still tend to get distracted with contents of the window. And even before I know I am like Alice falling down a rabbit hole.
@@ -65,7 +67,9 @@ Encouraged, I extended the practice to my smartphone. I disabled notifications f
 
 PS: I still have a virtual desktop dedicated to my office emails, however I consciously restrict myself from reading incoming emails while I am at task. Also, I find "[Do Not Disturb](https://support.apple.com/kb/ph18740?locale=en_US)" feature built in macOS very useful.
 
+---
 <span style="color:green">:bulb: Hardware and software indeed help, however actively minimizing distractions goes a long way to improve quality of the output.</span>
+---
 
 Finally, I also revived using [Pomodoro](https://www.amazon.com/Pomodoro-Technique-Illustrated-Easy-Pragmatic/dp/1934356506/) technique to effectively break my task at hand to individual tractable units. I noticed breaking a large task into time-boxed units of 25 minutes in length caused me to further focus on specifics of subtasks. It had the same effect of removing distractions across tasks, only now at sub-task level.
 
@@ -76,8 +80,9 @@ Specifically, I used [Task Light](https://github.com/alt-code/TaskLights) tool a
 
 You may consider using other tools such as an actual [pomodorro](https://www.amazon.com/60-Minute-Kitcher-Timer-Tomato/dp/B00EEUHJHO/) or just setting up a countdown time on the computer or your phone.
 
-| :bulb: Consider active time management to further improve productivity. |
-| --- |
+---
+<span style="color:green">:bulb: Consider active time management to further improve productivity.</span>
+---
 
 ### Further Reading
 
