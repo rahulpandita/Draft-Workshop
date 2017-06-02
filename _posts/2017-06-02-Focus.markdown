@@ -11,6 +11,7 @@ This post is about my *ongoing* journey to remedy my "increasing window" and "de
 
 ---
 <span style="color:green">tl;dr : Actively minimizing distractions fosters a productive work environment.</span>
+
 ---
 
 I like most programmers only can only aspire to be productive like Hugh Jackman in [swordfish](https://www.youtube.com/watch?v=u1Ds9CeG-VY); _"churning out copious amounts of code, just by recalling the syntax and the API's to be used from memory."_ However, it turns out that
@@ -47,6 +48,7 @@ from the shackles of using precise mouse clicks and drags to resize windows on m
 
 ---
 <span style="color:green">:bulb: A combination of high-resolution monitor and a window management software can get you started!</span>
+
 ---
 
 
@@ -69,6 +71,7 @@ PS: I still have a virtual desktop dedicated to my office emails, however I cons
 
 ---
 <span style="color:green">:bulb: Hardware and software indeed help, however actively minimizing distractions goes a long way to improve quality of the output.</span>
+
 ---
 
 Finally, I also revived using [Pomodoro](https://www.amazon.com/Pomodoro-Technique-Illustrated-Easy-Pragmatic/dp/1934356506/) technique to effectively break my task at hand to individual tractable units. I noticed breaking a large task into time-boxed units of 25 minutes in length caused me to further focus on specifics of subtasks. It had the same effect of removing distractions across tasks, only now at sub-task level.
@@ -82,6 +85,7 @@ You may consider using other tools such as an actual [pomodorro](https://www.ama
 
 ---
 <span style="color:green">:bulb: Consider active time management to further improve productivity.</span>
+
 ---
 
 ### Further Reading
