@@ -5,9 +5,7 @@ date:   2017-04-15 12:00:00
 categories: Test Post
 comments: true
 ---
-
 <img src="{{ site.baseurl  }}/images/MultiDesktop.png">
-
 
 This post is about my *ongoing* journey to remedy my "increasing window" and "decreasing productivity" problem.
 
