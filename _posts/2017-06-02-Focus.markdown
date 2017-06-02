@@ -5,7 +5,7 @@ date:   2017-04-15 12:00:00
 categories: Test Post
 comments: true
 ---
-<img src="{{ site.baseurl  }}/images/MultiDesktop.png" style="width:590px;">
+<img src="{{ site.baseurl  }}/images/MultiDesktop.png">
 
 This post is about my *ongoing* journey to remedy my "increasing window" and "decreasing productivity" problem.
 
@@ -64,7 +64,8 @@ Encouraged, I extended the practice to my smartphone. I disabled notifications f
 
 PS: I still have a virtual desktop dedicated to my office emails, however I consciously restrict myself from reading incoming emails while I am at task. Also, I find "[Do Not Disturb](https://support.apple.com/kb/ph18740?locale=en_US)" feature built in macOS very useful.
 
-    :bulb: Hardware and software indeed help, however actively minimizing distractions goes a long way to improve quality of the output.
+| :bulb: Hardware and software indeed help, however actively minimizing distractions goes a long way to improve quality of the output. |
+| --- |
 
 Finally, I also revived using [Pomodoro](https://www.amazon.com/Pomodoro-Technique-Illustrated-Easy-Pragmatic/dp/1934356506/) technique to effectively break my task at hand to individual tractable units. I noticed breaking a large task into time-boxed units of 25 minutes in length caused me to further focus on specifics of subtasks. It had the same effect of removing distractions across tasks, only now at sub-task level.
 
