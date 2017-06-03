@@ -89,6 +89,6 @@ You may consider using other tools such as an actual [pomodorro](https://www.ama
 - [The Large Display Paradox](https://blog.codinghorror.com/the-large-display-paradox/) by Jeff Atwood
 - [Programmer Interrupted](http://blog.ninlabs.com/2013/01/programmer-interrupted/) by Chris Parnin
 - [Spectacle App](https://www.spectacleapp.com/)
-- [Reducing Interruptions at Work: A Large-Scale Field Study of FlowLight](https://www.researchgate.net/profile/Andre_Meyer6/publication/316650733_Reducing_Interruptions_at_Work_A_Large-Scale_Field_Study_of_FlowLight/links/590b10d30f7e9b1d0826ee9f/Reducing-Interruptions-at-Work-A-Large-Scale-Field-Study-of-FlowLight.pdf)ctacleapp.com/)
+- [Reducing Interruptions at Work: A Large-Scale Field Study of FlowLight](https://www.researchgate.net/profile/Andre_Meyer6/publication/316650733_Reducing_Interruptions_at_Work_A_Large-Scale_Field_Study_of_FlowLight/links/590b10d30f7e9b1d0826ee9f/Reducing-Interruptions-at-Work-A-Large-Scale-Field-Study-of-FlowLight.pdf)
 - [Deep Work](https://www.amazon.com/gp/product/0349411905/)
 - [Are you a Self-Interrupter](http://nautil.us/issue/48/chaos/are-you-a-self_interrupter) by Adam Gazzaley & Larry D. Rosen
