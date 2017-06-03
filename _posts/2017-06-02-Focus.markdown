@@ -52,6 +52,7 @@ from the shackles of using precise mouse clicks and drags to resize windows on m
 Few months using the application, I felt good about the combination of Spectacle App and multiple desktops. However, something still felt amiss. Even with the efficiency of multiple desktops and awesome windows management, I still got distracted with contents of the window. And even before I knew I felt like Alice falling down a rabbit-hole.
 
 <img src="https://imgs.xkcd.com/comics/the_problem_with_wikipedia.png">
+
 Credit: XKCD
 
 Additionally, there were (still are) other interruptions such as: Email/Chat/Message notifications, a colleague walking down for a quick chat, my toddler tugging my shirt signaling to pick me up to have a better view of my screen. In addition to all this, there an often a self-imposed expectation to be on the top of your emails, IMs, latest on technology forums. Every now and then ~~(read all the time)~~ there is also this urge to keep up with the social media ([~~Arrgg Cats~~](http://www.cutestpaw.com/articles/50-cute-cats-make-your-life-happier/)). How about some music for that awesome noise cancellation headphone ~~that we brought from "Amazon.com"~~. Not to forget the calendar program that helps us keep track of out upcoming engagements.
