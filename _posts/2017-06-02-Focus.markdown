@@ -2,7 +2,7 @@
 layout: post
 title:  "Screens, Windows, Distractions, Focus, and Work"
 date:   2017-04-15 12:00:00
-categories: Test Post
+categories: productivity, focus
 comments: true
 ---
 <img src="{{ site.baseurl  }}/images/MultiDesktop.png">
