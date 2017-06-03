@@ -10,7 +10,7 @@ comments: true
 This post is about my *ongoing* journey to remedy my "increasing window" and "decreasing productivity" problem.
 
 ---
-<span style="color:green">tl;dr : Actively minimizing distractions fosters a productive work environment.</span>
+<span style="color:green">**tl;dr** : Actively minimizing distractions fosters a productive work environment.</span>
 
 
 I like most programmers only can only aspire to be productive like Hugh Jackman in [swordfish](https://www.youtube.com/watch?v=u1Ds9CeG-VY); _"churning out copious amounts of code, just by recalling the syntax and the API's to be used from memory."_ However, it turns out that
@@ -20,60 +20,57 @@ programming has evolved into ["Googling Stackoverflow"](http://www.theallium.com
 
 Credit: wikimedia.org
 
-Accompanying a code-editor there typically exist a multitude of "browser tabs" for research. According to a now [discontinued study](http://www.slate.com/articles/life/the_hive/2010/12/open_this_story_in_a_new_tab.html) performed around 2010 by Mozzilla, on average users opened 3.2 tabs. At the time of writing this sentence I have ~10 tabs open in my browser window and I have personally witnessed people with more.
+Accompanying a code-editor there typically exist a multitude of "browser tabs" for research. According to a now [discontinued study](http://www.slate.com/articles/life/the_hive/2010/12/open_this_story_in_a_new_tab.html) performed around 2010 by Mozzilla, on average users opened 3.2 tabs. At the time of writing this sentence I had ~10 tabs open in my browser window and I have personally witnessed people with more.
 
 > A browser with 27 open tabs has, fairly or not, come to symbolize the frenetic, attention-deficient aspects of our Web-centric lives. 
 > *-* *http://www.slate.com/articles/life/the\_hive/2010/12/open\_this\_story\_in\_a\_new\_tab.html*
 
-And that is just browser tabs. In addition there are multitude of windows containing bits of information that may (or may not :wink:) be relevant to the task at hand. Let’s focus on the relevant windows first. With so many windows I noticed that I was spending more time searching for relevant windows. I further noticed that I was constantly getting distracted resulting in poor productivity.
+And that is just browser tabs. In addition there are multitude of windows containing bits of information that may (or may not :wink:) be relevant to the task at hand. Let’s focus on the relevant windows first. With so many windows I noticed that I was spending more time searching for relevant windows. Additionally, I was also constantly getting distracted, hampering productivity.
 
 *This is not only true for developers, but in general true for any modern information jobs that rely more on more on internet dealing with multiple sources of data. A typical computer will have multiple windows open at any given instant of the time.*
 
-The advances in the hardware/software technology further encourages people to open a window and forget about it, which was a big *no-no* earlier. Failing to regularly close the unused windows could bring your system to a screeching halt by eating away into all the computer resources. While optimizing for resources we neglected the problem of window management.
+The advances in the hardware/software technology further encourages people to open a window and forget about it, which was a big *no-no* earlier. Failing to regularly close the unused windows could bring your system to a screeching halt by eating away into all the computer resources. Clearly, while optimizing for resources we neglected the problem of window management.
 
-I typically had multiple windows open on my system with information scattered across these windows. I spent more time in organizing and switching between these windows than on the task at hand with "ctrl+tab" or "⌘+tab" being my weapons of choice. A straightforward way of solving this issue was: *throw more hardware at it*. Specifically, enter big beefy monitors and multiples of them. With the display technology becoming increasingly cheap, we now have more choices than ever. We can choose from 1080P, 4K, ultra-wide, heck even 5K.
+I typically had multiple windows open on my screen with information scattered across these windows. I spent more time in organizing and switching between these windows than on the task at hand. "Ctrl+tab" or "⌘+tab" being my weapons of choice. A straightforward way of solving this issue was: *throw more hardware at it*. Specifically, enter big beefy monitors and multiples of them. With the display technology becoming increasingly cheap, we now have more choices than ever. We can choose from 1080P, 4K, ultra-wide, even 5K.
 
-I have been using Apple's LED Thunderbolt Display (27-inch) at work. I tried using the two displays but found that switching between displays was kind of annoying. For me, I found windows management for two monitors tedious. For a better and detailed summary of annoyances read : "[Why I Stopped Using Multiple Monitors](https://hackernoon.com/why-i-stopped-using-multiple-monitors-bfd87efa2e5b) by Cory House".
+I have been using Apple's LED Thunderbolt Display (27-inch) at work. I briefly tried using the two displays but found switching between displays and window management annoying and tedious. For a better and detailed summary of annoyances read : "[Why I Stopped Using Multiple Monitors](https://hackernoon.com/why-i-stopped-using-multiple-monitors-bfd87efa2e5b)" by Cory House.
 
-I realized that one high resolution display was enough to have multiple windows arranged to have same desired effect of multiple displays without taking up a lot of space on my desk and burning a hole in my pocket. My colleagues do recommend ultra-wide monitors which I am considering as the next upgrade.
+I concluded that one high-resolution display was enough. Arranging multiple windows across virtual desktops have same desired effect of multiple displays without taking up a lot of space on my desk and burning a hole in my pocket. My colleagues do recommend ultra-wide monitors which I am considering as the next upgrade.
 
-Although a good resolution monitor did provide me with great Paraphrasing Peter Parkers uncle Ben "with a large display comes large problem". Specifically, I am referring to large display paradox. 
+Admittedly a good resolution monitor did provide me with great start. However,  paraphrasing Peter Parkers uncle Ben "with a large display comes large problem". Specifically, I am referring to large display paradox. 
 
 > Having all that space can make you less productive due to all the window manipulation excise you have to deal with to make effective use of it.
 > *-* [*The Large Display Paradox*](https://blog.codinghorror.com/the-large-display-paradox/)
 
-I realized I was doing a lot of window manipulation myself. I searched for windows manipulation system and found [Spectacle App](https://www.spectacleapp.com/). A window management utility for macOS. At the core of the application is the shortcuts that allow you to quickly resize windows to predefined buckets. Using the app, I felt free
+I realized I still was doing a lot of window manipulation myself. I searched for windows manipulation system and found [Spectacle App](https://www.spectacleapp.com/). A window management utility for macOS. At the core of the application is the shortcuts that allow you to quickly resize windows to predefined buckets. Using the app, I felt free
 from the shackles of using precise mouse clicks and drags to resize windows on my screen. This was a significant improvement and made my life a lot easier. Like a kid in the candy store, I quickly organized multitude of my windows into separate desktops and then within each desktop neatly organized them.
 
 ---
 <span style="color:green">:bulb: A combination of high-resolution monitor and a window management software can get you started!</span>
 
 
-
-Few months using the application, I felt good about the combination of Spectacle App and multiple desktops. However, something still felt a miss. Even with the efficiency of multiple desktops and awesome windows management, I still tend to get distracted with contents of the window. And even before I know I am like Alice falling down a rabbit hole.
+Few months using the application, I felt good about the combination of Spectacle App and multiple desktops. However, something still felt amiss. Even with the efficiency of multiple desktops and awesome windows management, I still got distracted with contents of the window. And even before I knew I felt like Alice falling down a rabbit-hole.
 
 <img src="https://imgs.xkcd.com/comics/the_problem_with_wikipedia.png">
 Credit: XKCD
 
-In addition, there are other interruptions such as: Email/Chat/Message notifications, a colleague walking down for a quick chat, my toddler tugging my shirt signaling to pick me up to have a better view of my screen. In addition to all thus, there an often a self-imposed expectation to be on the top of your emails, IMs, latest on technology forums. Every now and then ~~(read all the time)~~ there is also this urge to keep up with the social media ~~(~~[~~Arrgg
-Cats~~](http://www.cutestpaw.com/articles/50-cute-cats-make-your-life-happier/)~~)~~. How about some music for that awesome noise cancellation headphone ~~that we brought from "Amazon.com"~~. Not to forget the calendar
-program that helps us keep track of out upcoming engagements.
+Additionally, there were (still are) other interruptions such as: Email/Chat/Message notifications, a colleague walking down for a quick chat, my toddler tugging my shirt signaling to pick me up to have a better view of my screen. In addition to all this, there an often a self-imposed expectation to be on the top of your emails, IMs, latest on technology forums. Every now and then ~~(read all the time)~~ there is also this urge to keep up with the social media ([~~Arrgg Cats~~](http://www.cutestpaw.com/articles/50-cute-cats-make-your-life-happier/)). How about some music for that awesome noise cancellation headphone ~~that we brought from "Amazon.com"~~. Not to forget the calendar program that helps us keep track of out upcoming engagements.
 
-It was about this time I stumbled upon a copy of [Deep Work](https://www.amazon.com/gp/product/0349411905/). And I realized that most of the distractions are self-imposed. I really did not need to have a virtual desktop dedicated to just my emails, IM. Most of my email correspondents were not offended when I did not respond to their emails instantaneously. Likewise, frequently checking on social media did not bring me any closer to my friends.
+It was about this time I stumbled upon a copy of [Deep Work](https://www.amazon.com/gp/product/0349411905/). And I realized that most of the distractions are self-imposed. I really did not need to have an entirety of virtual desktop dedicated to just my emails, IM. Most of my email correspondents were not offended when I did not respond to their emails instantaneously. Likewise, frequently checking on social media did not bring me any closer to my friends.
 
-It then dawned to me that I also did not need multiple virtual desktops open for each task. "Deep work" makes an argument about the limited focus of human beings and how fragmented focus causes quality of the task to suffer. This argument resonated with me and I realized that by tackling one task at a time and then switching in fact helped me in avoiding the cross-spilling of task concerns. Since I could shut of concerns from other tasks that would compete for my attention with the current task, I felt a noticeable difference in the quality of the work. I was not necessarily doing things faster, but I was doing things better.
+I also concluded that I did not need multiple virtual desktops open for each task. "Deep work" makes an argument about the limited focus of human beings and how fragmented focus causes quality of the task to suffer. This argument resonated with me and I realized that by tackling one task at a time and then switching in fact helped me in avoiding the cross-spilling of task concerns. Since I could shut of concerns from other tasks that would otherwise compete for my attention with the current task, I felt a noticeable difference in the quality of the my work. I was not necessarily doing things **faster**, but I was doing things better.
 
-Encouraged, I extended the practice to my smartphone. I disabled notifications from Twitter, Facebook, Whatsapp, and Gmail. By doing that I felt that I was more attentive to task at hand than wasting my time by looking idly at my phone screen.
+Encouraged, I extended the practice to my smart phone. I disabled notifications from Twitter, Facebook, Whatsapp, and Gmail. By doing that I felt that I was more attentive to task at hand than wasting my time by looking idly at my phone screen.
 
-PS: I still have a virtual desktop dedicated to my office emails, however I consciously restrict myself from reading incoming emails while I am at task. Also, I find "[Do Not Disturb](https://support.apple.com/kb/ph18740?locale=en_US)" feature built in macOS very useful.
+PS: I still have a virtual desktop dedicated to my office emails, however I consciously restrict myself from reading incoming emails while I am at task. Also, I find "[Do Not Disturb](https://support.apple.com/kb/ph18740?locale=en_US)" feature built-in macOS very useful.
 
 ---
 <span style="color:green">:bulb: Hardware and software indeed help, however actively minimizing distractions goes a long way to improve quality of the output.</span>
 
 
-Finally, I also revived using [Pomodoro](https://www.amazon.com/Pomodoro-Technique-Illustrated-Easy-Pragmatic/dp/1934356506/) technique to effectively break my task at hand to individual tractable units. I noticed breaking a large task into time-boxed units of 25 minutes in length caused me to further focus on specifics of subtasks. It had the same effect of removing distractions across tasks, only now at sub-task level.
+Finally, I also revived using [Pomodoro](https://www.amazon.com/Pomodoro-Technique-Illustrated-Easy-Pragmatic/dp/1934356506/) technique to effectively break my task at hand to individual tractable units. I noticed breaking a large task into time-boxed units of 25 minutes in length caused me to further focus on specifics of sub-tasks. It had the same effect of removing distractions across tasks, only now at sub-task level.
 
-Specifically, I used [Task Light](https://github.com/alt-code/TaskLights) tool as a forcing function to time box my tasks. Task Light is a USB LED that attaches to your computer and turns from green to yellow to orange to red over a Pomodoro period specified by the user, in my case 25 minutes. The color of the light allows you to gauge where you at in your Pomodoro, in addition to being a reminder that you are in Pomodoro and thus must focus on the task at hand.
+Specifically, I used [Task Light](https://github.com/alt-code/TaskLights) tool as a forcing function to time-box my tasks. Task Light is a USB LED that attaches to your computer and turns from green to yellow to orange to red over a Pomodoro period specified by the user, in my case 25 minutes. The color of the light allows you to gauge where you at in your Pomodoro, in addition to being a reminder that you are in Pomodoro and thus must focus on the task at hand.
 
 > I have been using task lights for over a year. It is also one of the few research tools I actually use myself. >
 >*- Chris Parnin*
