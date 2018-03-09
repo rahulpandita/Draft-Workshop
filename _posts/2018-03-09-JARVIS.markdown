@@ -63,7 +63,7 @@ To avoid annoying users with vague recommendations, we came-up with two heuristi
 The novelty of using a natural language interface quickly ears off. We observed that most users started forming requests with roper English sentences to form requests, but the conversation was quickly reduced to keyword utterances. Chatbot designers should plan for this eventuality. :wink:
 
 
-<span style="color:green">_Actually, I find this quiet fascinating and natural evolution of conversation. I think of this phenomena as the one mirroring our natural conversations. When we first meet someone new we are deliberate in our conversation. However, overtime over conversations are more informal. But that is a topic for future posts._</span>
+<span style="color:green">_Actually, I find this quite fascinating and natural evolution of conversation. I think of this phenomena as the one mirroring our natural conversations. When we first meet someone new we are deliberate in our conversation. However, over-time over conversations are more informal. But that is a topic for future posts._</span>
 
 #### Subliminal Priming
 
