@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  "J.A.R.V.I.S. for Developers"
@@ -64,7 +63,7 @@ To avoid annoying users with vague recommendations, we came-up with two heuristi
 The novelty of using a natural language interface quickly ears off. We observed that most users started forming requests with roper English sentences to form requests, but the conversation was quickly reduced to keyword utterances. Chatbot designers should plan for this eventuality. :wink:
 
 
-<span style="color:red">_Actually, I find this quiet fascinating and natural evolution of conversation. I think of this phenomena as the one mirroring our natural conversations. When we first meet someone new we are deliberate in our conversation. However, overtime over conversations are more informal. But that is a topic for future posts._</span>
+<span style="color:green">_Actually, I find this quiet fascinating and natural evolution of conversation. I think of this phenomena as the one mirroring our natural conversations. When we first meet someone new we are deliberate in our conversation. However, overtime over conversations are more informal. But that is a topic for future posts._</span>
 
 #### Subliminal Priming
 
@@ -88,9 +87,9 @@ Consider the frequencies of following user request variations in our system:
 |  |  |
 By playing back, “our system found following instances where output concept balance is less than 0,” to each of these request responses, we observed that users started to use the phrase, “output balance less than 0,” more, as shown in the frequency counts.
 
-<span style="color:red">_For the keen eyed, notice that the repeated proper phrase, “filter by output concept balance is less than 0” is used less. However, remember over time users stop using fully formed sentences._ :wink: </span>
+<span style="color:green">_For the keen eyed, notice that the repeated proper phrase, “filter by output concept balance is less than 0” is used less. However, remember over time users stop using fully formed sentences._ :wink: </span>
 
-<span style="color:red">_We also observed that talking with affected American or British accents works. This may be a product of an unbalanced training set used during creation of the speech to text models. That's why_ [_fairness testing_](http://people.cs.umass.edu/~brun/pubs/pubs/Galhotra17fse.pdf) _is important. But that is a topic for another post._ </span>
+<span style="color:green">_We also observed that talking with affected American or British accents works. This may be a product of an unbalanced training set used during creation of the speech to text models. That's why_ [_fairness testing_](http://people.cs.umass.edu/~brun/pubs/pubs/Galhotra17fse.pdf) _is important. But that is a topic for another post._ </span>
 
 #### Data driven prioritization
 
@@ -100,7 +99,7 @@ A pipeline design is often a used for chatbot realization. Like most pipeline de
 
 So how does one decide which components to tune first? This is where data-driven prioritization can really help. For instance, in our setting a light-weight error analysis helped on more than one occasion to identify the components we focused on.
 
-<span style="color:red">_I only imagine that data-driven prioritization will become more useful in the future as we experiment with statistical approaches that often have a pipeline design._ </span>
+<span style="color:green">_I only imagine that data-driven prioritization will become more useful in the future as we experiment with statistical approaches that often have a pipeline design._ </span>
 
 ----------
 
