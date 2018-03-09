@@ -76,15 +76,18 @@ Furthermore, in psychology and cognitive science, subliminal priming is the phen
 We were interested if we could use subliminal priming to expedite entrainment. We started to playback a normalized version of a query with the responses to the query. By simply doing that we observed users were quickly converging to the our cahtbot vocabulary.
 
 Consider the frequencies of following user request variations in our system:
+
 | Query | \# of Uses by Test Subjects |
-|--|--|
+|-----|-----|
 |list computations with a negative balance | 30 |
 |filter for computations where output concept Balance is less than 0 |17 |
 |filter by balance Less Than Zero | 16 |
 | filter by output concept balance is less than 0 | 09 |
 | show computations where output concept balance is less than 0 |01 |
 |**filter by output balance less than 0**| **224**|
-|  |  |
+
+
+
 By playing back, “our system found following instances where output concept balance is less than 0,” to each of these request responses, we observed that users started to use the phrase, “output balance less than 0,” more, as shown in the frequency counts.
 
 <span style="color:green">_For the keen eyed, notice that the repeated proper phrase, “filter by output concept balance is less than 0” is used less. However, remember over time users stop using fully formed sentences._ :wink: </span>
