@@ -1,0 +1,110 @@
+
+---
+layout: post
+title:  "J.A.R.V.I.S. for Developers"
+date:   2018-03-09 00:00:00
+categories: chatbots
+comments: true
+---
+
+Our work on [Towards J.A.R.V.I.S. for Software Engineering: _Lessons Learned in Implementing a Natural Language Chat Interface_](http://rahulpandita.me/files/jarvis.pdf) was accepted in [NL4SE 2018](https://nl4se.github.io/).  This work was done in collaboration with [Phase Change](https://www.phasechange.ai/) staff members Steven Bucuvalas, Hugolin Bergier, [Aleksandar Chakarov](https://anchakarov.github.io/), and Elizabeth Richards.
+
+### Abstract
+
+>Virtual assistants have demonstrated the potential to significantly improve the digital experiences of information technology  workers. We, at Phase Change Software, are working on developing a virtual assistant MIA that helps software developers with program comprehension. This work summarizes the key lessons learned and identifies open questions during the initial implementation of the MIA chat interface.
+
+Our goal is to develop a virtual assistant technology that assists programmers in quickly become proficient in a new system. We refer to our assistant as _MIA_, which is short for _My Intelligent Agent_. As a first step towards realizing MIA, we are focusing on program comprehension. Then we will gradually expand MIA’s capabilities to include program composition and verification.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/87CfEIzcr6g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+Here are a few things we learned during the first iteration of the MIA chat interface implementation.
+
+#### Reuse Components to quickly prototype.
+
+Instead of building everything from scratch, consider reusing existing frameworks and libraries to quickly prototype and get feedback.
+
+#### Gradually migrate from rule-based to statistical approaches.
+
+With the ever-increasing popularity and efficacy of statistical approaches, teams are often tempted to implement them. However, oftentimes at the inception of a project, teams don't have enough data to learn from these approaches to work optimally.
+
+We have noticed that recent advances in _transfer learning_ enable teams to reap the benefits of statistical approaches with only a small amount of data. However, rule-based approaches still allow prototypes to get up and running with only a small amount of set-up time.
+
+Furthermore, a rule-based-approach allowed us to collect more data for:
+
+1.	A better understanding of the chatbot requirements, and
+2. Future positioning to effectively leverage statistical approaches.
+
+#### Adopt Recommendation Systems.
+
+In our dog-food testing phase, we learned that although users appreciated bot honesty when our chatbot did not understand a request, they did not take it well (to put it mildly) when the chatbot did not provide a way to remedy the situation.
+
+There can be many causes for the chatbot failing to understand a request. For instance, the request might actually fall outside the chatbot's capabilities. On the other hand, another class of _incomprehensible requests_ were due to implementation limitations.
+
+While we can’t do much about the former, building a recommendation system for the later class of requests almost always proves beneficial and vastly improves user experience.
+
+For example, the noise in a speech-to-text (STT) component is a major cause of incomprehensible requests. In a fictional banking-system software that allows pets to interact with ATMs, a user of our MIA system may form a query to discover all of the uses cases in which the actor "pet"  participates in. If the user says: “_filter by actor pet”_, we could expect the following transcript from STT-component causing the subsequent components in the pipeline to misfire:
+
+* filter boy actor pet
+* filter by act or pet
+* filter by act or pad
+* filter by a store pet
+* filter by actor pass
+* filter by active pet
+* filter by actor Pat
+
+While users will most likely be more deliberate in their subsequent interactions with the STT component, we noticed that these errors are commonplace and very negatively affect user experience. To remedy the situation, we used a light-weight, [string-similarity](https://github.com/tdebatty/java-string-similarity) based method to provide recommendations. Subsequent observations indicated that users almost always liked recommendations – except when the recommended suggestions were too vague.
+
+To avoid annoying users with vague recommendations, we came-up with two heuristics. First, we provided at-most 3 recommendations. Second, to be considered as a candidate query for recommendation, the candidate request must score higher than an empirically determined threshold for the similarity measure with respect to incoming request.
+
+
+
+#### Over time users stop using fully formed sentences.
+
+The novelty of using a natural language interface quickly ears off. We observed that most users started forming requests with roper English sentences to form requests, but the conversation was quickly reduced to keyword utterances. Chatbot designers should plan for this eventuality. :wink:
+
+
+<span style="color:red">_Actually, I find this quiet fascinating and natural evolution of conversation. I think of this phenomena as the one mirroring our natural conversations. When we first meet someone new we are deliberate in our conversation. However, overtime over conversations are more informal. But that is a topic for future posts._</span>
+
+#### Subliminal Priming
+
+In the field of formal study of conversations, there is an effect known as _“entrainment”,_ which is informally defined as the convergence of the vocabulary of conversation participants over period of time to achieve effective communication.
+
+We stumbled on this effect in our context, when we observed that users employed an affected accent to get better mileage out of the STT component.
+
+Furthermore, in psychology and cognitive science, subliminal priming is the phenomenon of eliciting a specific motor or cognitive response from a subject without explicitly asking for it.
+
+We were interested if we could use subliminal priming to expedite entrainment. We started to playback a normalized version of a query with the responses to the query. By simply doing that we observed users were quickly converging to the our cahtbot vocabulary.
+
+Consider the frequencies of following user request variations in our system:
+| Query | \# of Uses by Test Subjects |
+|--|--|
+|list computations with a negative balance | 30 |
+|filter for computations where output concept Balance is less than 0 |17 |
+|filter by balance Less Than Zero | 16 |
+| filter by output concept balance is less than 0 | 09 |
+| show computations where output concept balance is less than 0 |01 |
+|**filter by output balance less than 0**| **224**|
+|  |  |
+By playing back, “our system found following instances where output concept balance is less than 0,” to each of these request responses, we observed that users started to use the phrase, “output balance less than 0,” more, as shown in the frequency counts.
+
+<span style="color:red">_For the keen eyed, notice that the repeated proper phrase, “filter by output concept balance is less than 0” is used less. However, remember over time users stop using fully formed sentences._ :wink: </span>
+
+<span style="color:red">_We also observed that talking with affected American or British accents works. This may be a product of an unbalanced training set used during creation of the speech to text models. That's why_ [_fairness testing_](http://people.cs.umass.edu/~brun/pubs/pubs/Galhotra17fse.pdf) _is important. But that is a topic for another post._ </span>
+
+#### Data driven prioritization
+
+We also realized the benefits of leveraging data in prioritizing the engineering tasks as opposed to going with your gut.
+
+A pipeline design is often a used for chatbot realization. Like most pipeline designs, the _efficacy_ of the final product is a function of how well the individual components work in tandem within the pipeline. Thus, optimizing the design involves iteratively tuning and fixing various individual components.
+
+So how does one decide which components to tune first? This is where data-driven prioritization can really help. For instance, in our setting a light-weight error analysis helped on more than one occasion to identify the components we focused on.
+
+<span style="color:red">_I only imagine that data-driven prioritization will become more useful in the future as we experiment with statistical approaches that often have a pipeline design._ </span>
+
+----------
+
+**We hope** that our observations will be helpful for those embarking on the journey to build virtual assistants. We would love to hear your experiences.
+
+---
+Cross-posted at [Phase Change Software blog](https://www.phasechange.ai/2018/03/08/phase-change-scientists-publish-paper-on-lessons-learned-implementing-a-natural-language-chat-interface-blog/).
