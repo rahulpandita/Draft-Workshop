@@ -1,0 +1,74 @@
+---
+layout: post
+title:  "Team Values"
+date:   2021-08-16 00:00:00
+categories: personal
+comments: true
+---
+
+Lately, I have found myself frequently revisiting some ideas/heuristics/guidelines/norms to govern my interactions with the team members. Since these have been useful for me I decided to formally list them here in this post in hopes that you might find these useful as well. To be clear, I do not claim to have created these. These notions existed long before me. I merely have adopted them to create some structure for my day-to-day interactions with the team. These "values" have been grouped into three categories: 1) Pertaining to team dynamics, 2) attitude towards the results produced, and 3) behavior of the team members 
+
+---
+
+### People Values
+
+These values guide our team dynamics 
+
+#### 1. We are a team first
+
+As a team, we shall strive to listen to each other with an open mind without interruption. When we know that our ideas will be debated and considered properly, we will be more encouraged to come forward with them. Humility, Respect, Trust. These are the pillars for us to work as a team. 
+
+#### 2. Data-Driven Decisions
+
+As a team, we shall be taking key decisions based on reasoning, not rank. Whenever data is unavailable or insufficient, we base our decisions on assumptions, precedent, and argument.  We'll strive to maximize the decisions based on data.
+
+* [Software Engineering at Google by Titus Winters, Tom Manshreck, Hyrum Wright](https://www.oreilly.com/library/view/software-engineering-at/9781492082781/)
+
+#### 3. Knowledge is doubled by sharing.
+
+As a team, we shall share knowledge and experience with other team members. The _"information is power"_ culture likely breeds ignorance, mistakes, and defensive behavior.
+
+* [To Sell is Human: The Surprising Truth About Persuading, Convincing, and Influencing Others - Daniel H. Pink](https://www.amazon.com/Sell-Human-Surprising-Persuading-Influencing/dp/1786891719)
+
+---
+
+### Result Values
+
+These values guide our attitude towards the results produced by the team.
+
+#### 4. It is best to do one thing really really well.**
+
+As a team, we should strive to deliberately focus our attention on the task that_ “truly moves the needle”_ instead of spreading ourselves too thin doing multiple tasks and in turn leading to a mediocre performance across all those tasks.
+
+* [Deep Work: Rules for Focused Success in a Distracted World - Cal Newport](https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692)
+
+#### 5. Always strive for continous improvement.**
+
+As a team, we should always be on the lookout for how we can better achieve our goals. Sometimes “_great just isn’t good enough”_ and there is always room for improvement.
+
+#### 6. Don’t miss the forest for the trees.**
+
+As a team, we should focus on larger impact instead of immediate gains.
+
+---
+
+### Behavior Values
+
+These values guide the behavior of the team members.
+
+ 
+#### 7. Do the right thing.
+
+As team members, we shall behave with integrity and treat people equally and fairly. This also includes positively challenging dishonesty or destructive behavior.
+
+#### 8. It is not not-your-job.
+
+As a team with large plans for the future, if we find an issue that is not directly related to the task at hand, we must discuss that as a team to get it resolved in some capacity.
+
+#### 9. Diversity amplifies our abilities.
+
+As members, we shall embrace the diversity of thinking to counteract the otherwise monochromatic approach to problem-solving and an inability to think dynamically.
+
+#### 10. Invest in ourselves.
+
+As a team, we shall invest in ourselves physically, mentally, and intellectually. We are more likely to bring our A-game when we are feeling great.
