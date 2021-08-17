@@ -8,7 +8,7 @@ comments: true
 
 <a title="Halfwitty, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Team_icon.png"><img width="256" alt="Team icon" src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Team_icon.png"></a>
 
-Lately, I have found myself frequently revisiting some ideas/heuristics/guidelines/norms to govern my interactions with the team members. Since these have been useful for me I decided to formally list them here in this post in hopes that you might find these useful as well. To be clear, I do not claim to have created these. These notions existed long before me. I merely have adopted them to create some structure for my day-to-day interactions with the team. These "values" have been grouped into three categories: 1) Pertaining to team dynamics, 2) attitude towards the results produced, and 3) behavior of the team members 
+Lately, I have found myself frequently revisiting some ideas/heuristics/guidelines/norms to govern my interactions with the team members. Since these have been useful for me I decided to formally list them here in this post in hopes that you might find these useful as well. To be clear, I do not claim to have created/discovered these values. These notions existed long before me. I merely have adopted them to create some structure for my day-to-day interactions with the team. These "values" have been grouped into three categories: 1) Pertaining to team dynamics, 2) attitude towards the results produced, and 3) behavior of the team members 
 
 
 
