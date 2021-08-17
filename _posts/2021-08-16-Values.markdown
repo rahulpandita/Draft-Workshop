@@ -8,7 +8,7 @@ comments: true
 
 Lately, I have found myself frequently revisiting some ideas/heuristics/guidelines/norms to govern my interactions with the team members. Since these have been useful for me I decided to formally list them here in this post in hopes that you might find these useful as well. To be clear, I do not claim to have created these. These notions existed long before me. I merely have adopted them to create some structure for my day-to-day interactions with the team. These "values" have been grouped into three categories: 1) Pertaining to team dynamics, 2) attitude towards the results produced, and 3) behavior of the team members 
 
----
+
 
 ### People Values
 
@@ -30,7 +30,7 @@ As a team, we shall share knowledge and experience with other team members. The 
 
 * [To Sell is Human: The Surprising Truth About Persuading, Convincing, and Influencing Others - Daniel H. Pink](https://www.amazon.com/Sell-Human-Surprising-Persuading-Influencing/dp/1786891719)
 
----
+
 
 ### Result Values
 
@@ -50,7 +50,7 @@ As a team, we should always be on the lookout for how we can better achieve our 
 
 As a team, we should focus on larger impact instead of immediate gains.
 
----
+
 
 ### Behavior Values
 
