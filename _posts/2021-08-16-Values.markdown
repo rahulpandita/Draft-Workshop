@@ -16,7 +16,7 @@ These values guide our team dynamics
 #### 1. We are a team first
 As a team, we shall strive to listen to each other with an open mind without interruption. When we know that our ideas will be debated and considered properly, we will be more encouraged to come forward with them. Humility, Respect, Trust. These are the pillars for us to work as a team. 
 
-#### 2. Data-Driven Decisions
+#### 2. Data-driven decisions
 
 As a team, we shall be taking key decisions based on reasoning, not rank. Whenever data is unavailable or insufficient, we base our decisions on assumptions, precedent, and argument.  We'll strive to maximize the decisions based on data. - [Software Engineering at Google by Titus Winters, Tom Manshreck, Hyrum Wright](https://www.oreilly.com/library/view/software-engineering-at/9781492082781/)
 
